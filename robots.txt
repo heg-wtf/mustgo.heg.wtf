@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mustgo.heg.wtf/sitemap.xml
+
+# Disallow crawling of temporary or draft pages
+Disallow: /drafts/
+Disallow: /*.tmp$
