@@ -55,18 +55,23 @@
    * 앱 모드 처리 (type=MUSTGO-APP)
    * - 헤더 숨김 (뒤로, 공유 버튼)
    * - 푸터 숨김 (홈, 이용약관, 개인정보처리방침)
+   * - 길찾기 버튼 숨김
    */
   function handleAppMode(isAppMode) {
     if (!isAppMode) return;
 
     const header = document.querySelector('.header');
     const footer = document.querySelector('.footer');
+    const placeActions = document.querySelector('.place-actions');
 
     if (header) {
       header.classList.add('hidden');
     }
     if (footer) {
       footer.classList.add('hidden');
+    }
+    if (placeActions) {
+      placeActions.classList.add('hidden');
     }
   }
 
