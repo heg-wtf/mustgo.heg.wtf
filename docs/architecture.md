@@ -14,7 +14,7 @@ MustGo 웹은 Flutter 앱의 WebView에서 장소 상세 정보를 표시하기 
 │                   ▼                             │
 │  ┌──────────────────────────────────────────┐   │
 │  │  🌐 WebView                               │   │
-│  │  mustgo.heg.wtf/places/{place_id}        │   │
+│  │  mustgo.heg.wtf/places/{UUID}?type=...   │   │
 │  └──────────────────────────────────────────┘   │
 └─────────────────────────────────────────────────┘
               │
@@ -22,7 +22,7 @@ MustGo 웹은 Flutter 앱의 WebView에서 장소 상세 정보를 표시하기 
 ┌─────────────────────────────────────────────────┐
 │  GitHub Pages (mustgo.heg.wtf)                  │
 │  - 정적 HTML/CSS/JS                             │
-│  - AdSense 광고                                 │
+│  - Naver Maps SDK                              │
 └─────────────────────────────────────────────────┘
 ```
 
@@ -32,8 +32,16 @@ MustGo 웹은 Flutter 앱의 WebView에서 장소 상세 정보를 표시하기 
 
 | 방식 | 용도 | 예시 |
 |------|------|------|
-| URL 파라미터 | 초기 설정 | `?theme=dark&hideHeader=true` |
+| URL 파라미터 | 앱 모드 설정 | `?type=MUSTGO-APP` |
+| URL 파라미터 | 테마 설정 | `?theme=dark` |
 | JS 호출 | 동적 변경 | `window.applyTheme('dark')` |
+
+### 앱 모드 (type=MUSTGO-APP)
+
+앱에서 WebView로 접근 시 다음 요소가 숨겨집니다:
+- 헤더 (뒤로, 공유 버튼)
+- 푸터 (홈, 이용약관, 개인정보처리방침)
+- 길찾기 버튼 (.place-actions)
 
 ### WebView → 앱
 
@@ -53,7 +61,7 @@ MustGoBridge.call(phone)            // 전화
 ```json
 {
   "action": "bookmark",
-  "data": { "placeId": "seoul-001" },
+  "data": { "placeId": "002cdb8f-5f71-4657-b259-a2e4383336db" },
   "timestamp": 1706918400000
 }
 ```
@@ -82,16 +90,18 @@ MustGoBridge.call(phone)            // 전화
 ## 장소 페이지 생성 파이프라인
 
 ```
-Supabase DB (places 테이블)
+Supabase DB (mustgo_places 테이블)
         │
         ▼
-Claude Agent
+Claude Agent (generate-html-slider.mjs)
+  - Supabase REST API로 256개 장소 조회
   - 템플릿 기반 HTML 생성
-  - OG 메타 태그, Schema.org 삽입
+  - 이미지 슬라이더, 지도, SEO 메타 태그 삽입
         │
         ▼
 GitHub Repository 커밋
-  - places/{region}-{seq}.html
+  - places/{UUID}.html
+  - sitemap.xml 자동 업데이트
         │
         ▼
 GitHub Pages 자동 배포
@@ -100,10 +110,57 @@ GitHub Pages 자동 배포
 ### 파일명 규칙
 
 ```
-places/{region_slug}-{3자리 시퀀스}.html
+places/{UUID}.html
 
 예시:
-  places/seoul-001.html
-  places/jeju-042.html
-  places/busan-001.html
+  places/002cdb8f-5f71-4657-b259-a2e4383336db.html
+  places/00d18859-620e-4fc1-856c-7a8d472b9551.html
 ```
+
+UUID는 Supabase `mustgo_places` 테이블의 `id` 필드 값입니다.
+
+## 이미지 슬라이더
+
+### 구조
+
+```html
+<section class="place-hero place-slider">
+  <div class="place-slider-track">
+    <div class="place-slider-slide">...</div>
+  </div>
+  <button class="place-slider-nav prev">...</button>
+  <button class="place-slider-nav next">...</button>
+  <div class="place-slider-counter">1 / 3</div>
+</section>
+```
+
+### 기능
+
+- 터치 스와이프 지원 (50px 이상 드래그)
+- 이전/다음 버튼 네비게이션
+- 카운터 표시 (현재/전체)
+- 이미지 1개일 경우 네비게이션 숨김
+
+## 네이버 지도
+
+### SDK 설정
+
+```html
+<script src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpKeyId=5sgg4izutv"></script>
+```
+
+### 지도 컨테이너
+
+```html
+<div class="place-map-container" id="map"
+     data-lat="37.53484249"
+     data-lng="127.00085988"
+     data-name="장소명">
+</div>
+```
+
+### 설정값
+
+- 줌 레벨: 18
+- 컨트롤: 모두 숨김
+- 마커: 장소 위치에 자동 추가

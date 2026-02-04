@@ -1,24 +1,20 @@
 # TODO
 
-## 배포 전 필수
+## 완료됨
 
-- [ ] Route53 DNS 설정 (mustgo.heg.wtf CNAME → heg-wtf.github.io)
-- [ ] GitHub Pages 활성화 (Settings → Pages → Source: main)
-- [ ] HTTPS 활성화 (Enforce HTTPS 체크)
-- [ ] 모든 페이지 접근 테스트
-
-## AdSense 연동
-
-- [ ] AdSense 계정에서 사이트 등록 (mustgo.heg.wtf)
-- [ ] 소유권 인증 완료
-- [ ] `adsense.js`에 실제 클라이언트 ID 입력
-- [ ] 광고 단위 생성 및 슬롯 ID 입력
-- [ ] 최소 30개 장소 페이지 확보 후 심사 요청
+- [x] Route53 DNS 설정 (mustgo.heg.wtf CNAME)
+- [x] GitHub Pages 활성화
+- [x] HTTPS 활성화
+- [x] 256개 장소 페이지 생성
+- [x] UUID 기반 파일명 적용 (앱 WebView 연동)
+- [x] 이미지 슬라이더 구현
+- [x] 네이버 지도 연동
+- [x] 앱 모드 (type=MUSTGO-APP) 구현
+- [x] 외부링크 개별 항목 분리 (홈페이지, 인스타그램, 캐치테이블)
+- [x] sitemap.xml 자동 업데이트
 
 ## 콘텐츠
 
-- [ ] 서울 장소 30개 이상 추가
-- [ ] 제주 장소 10개 이상 추가
 - [ ] favicon.ico 추가
 - [ ] og-image.png 추가
 - [ ] apple-touch-icon.png 추가
@@ -35,3 +31,9 @@
 - [ ] Android Chrome WebView 테스트
 - [ ] 다크모드 동작 확인
 - [ ] 앱 Bridge 통신 테스트
+
+## 향후 개선
+
+- [ ] 장소 페이지 자동 생성 CI/CD 파이프라인
+- [ ] 리뷰/평점 기능 추가
+- [ ] 방문 통계 추가 (Analytics)
