@@ -25,7 +25,8 @@
     return {
       theme: params.get('theme'),
       hideHeader: params.get('hideHeader') === 'true',
-      source: params.get('source')
+      source: params.get('source'),
+      type: params.get('type')
     };
   }
 
@@ -47,6 +48,25 @@
     const header = document.querySelector('.header');
     if (header && hide) {
       header.classList.add('hidden');
+    }
+  }
+
+  /**
+   * 앱 모드 처리 (type=MUSTGO-APP)
+   * - 헤더 숨김 (뒤로, 공유 버튼)
+   * - 푸터 숨김 (홈, 이용약관, 개인정보처리방침)
+   */
+  function handleAppMode(isAppMode) {
+    if (!isAppMode) return;
+
+    const header = document.querySelector('.header');
+    const footer = document.querySelector('.footer');
+
+    if (header) {
+      header.classList.add('hidden');
+    }
+    if (footer) {
+      footer.classList.add('hidden');
     }
   }
 
@@ -189,8 +209,13 @@
       applyTheme(params.theme);
     }
 
-    // 헤더 숨김
-    handleHeaderVisibility(params.hideHeader);
+    // 앱 모드 처리 (type=MUSTGO-APP)
+    if (params.type === 'MUSTGO-APP') {
+      handleAppMode(true);
+    } else {
+      // 기존 헤더 숨김 처리 (hideHeader 파라미터)
+      handleHeaderVisibility(params.hideHeader);
+    }
 
     // 이벤트 핸들러 설정
     handleExternalLinks();
