@@ -295,7 +295,7 @@
 
     var map = new naver.maps.Map(mapContainer, {
       center: position,
-      zoom: 16,
+      zoom: 18,
       zoomControl: false,
       mapTypeControl: false,
       scaleControl: false,
