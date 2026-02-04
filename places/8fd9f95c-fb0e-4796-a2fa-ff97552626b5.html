@@ -86,14 +86,32 @@
 
     <!-- Main Content -->
     <main>
-      <!-- Hero Image -->
-      <section class="place-hero">
-        <img
-          src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20241105_268%2F1730817610156ml5jl_JPEG%2FB7383C36-EE7A-4F92-9731-ED20946F4DCC.jpeg"
-          alt="어리틀케틀 대표 이미지"
-          class="place-hero-image"
-          loading="eager"
-        >
+      <!-- Hero Image Slider -->
+
+      <section class="place-hero place-slider">
+        <div class="place-slider-track">
+
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20241105_268%2F1730817610156ml5jl_JPEG%2FB7383C36-EE7A-4F92-9731-ED20946F4DCC.jpeg" alt="어리틀케틀 이미지 1" loading="eager">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNTAxMjZfMjY0%2FMDAxNzM3ODc5MjU1Nzky.bOSlA8DtjxLin8r7Twk4qHbeRvdjGonmS8NhQQ09sYMg.fqlN0qI7kbeZZcpwkSoCu28TQ238b_YJSxqj1evEhG8g.JPEG%2F69B5E6D0-0554-4004-B27E-4BBAD998E589.jpeg%3Ftype%3Dw1500_60_sharpen" alt="어리틀케틀 이미지 2" loading="lazy">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240905_68%2F1725536651839yI3MF_JPEG%2FB524A5A1-C047-4D37-9CE1-8B85E948911F.jpeg" alt="어리틀케틀 이미지 3" loading="lazy">
+        </div>
+        </div>
+        <button class="place-slider-nav prev" aria-label="이전 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        <button class="place-slider-nav next" aria-label="다음 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+        <div class="place-slider-counter">1 / 3</div>
       </section>
 
       <!-- Place Info -->

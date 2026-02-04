@@ -86,14 +86,32 @@
 
     <!-- Main Content -->
     <main>
-      <!-- Hero Image -->
-      <section class="place-hero">
-        <img
-          src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220204_62%2F1643902136329oYTeV_JPEG%2Fbest%25C1%25F8%25BD%25C9%25B9%25E8%25B0%25E6.jpg"
-          alt="진심 대표 이미지"
-          class="place-hero-image"
-          loading="eager"
-        >
+      <!-- Hero Image Slider -->
+
+      <section class="place-hero place-slider">
+        <div class="place-slider-track">
+
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220204_62%2F1643902136329oYTeV_JPEG%2Fbest%25C1%25F8%25BD%25C9%25B9%25E8%25B0%25E6.jpg" alt="진심 이미지 1" loading="eager">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNDExMDZfMTA1%2FMDAxNzMwODcyMTgzNDY5.HOD9jkDMm8XBrf8U6wF_fEo7yXIKlj7FRaueSLj0MWEg.ZCT3PifKehXqAYhn-GYKAMu5Dhtg5IRUgILPFJ09AF8g.JPEG%2F7462CB8F-6992-4BB7-AFBF-169AD269D79F.jpeg%3Ftype%3Dw1500_60_sharpen" alt="진심 이미지 2" loading="lazy">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNDEwMzFfMTcy%2FMDAxNzMwMzY0Mjg4NzE5.jJ_CyWsVFlZTGlwu2WAD6s4VY2DYPFI3_6SvApvPIfQg.jjG2kIvhKiajVD6ZqWokMv117sy3gQKG66ymzu9k3BIg.JPEG%2F1F0CB5D2-EDAF-4FF7-A262-A540108EE69D.jpeg%3Ftype%3Dw1500_60_sharpen" alt="진심 이미지 3" loading="lazy">
+        </div>
+        </div>
+        <button class="place-slider-nav prev" aria-label="이전 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        <button class="place-slider-nav next" aria-label="다음 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+        <div class="place-slider-counter">1 / 3</div>
       </section>
 
       <!-- Place Info -->

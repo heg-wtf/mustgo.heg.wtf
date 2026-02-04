@@ -86,14 +86,32 @@
 
     <!-- Main Content -->
     <main>
-      <!-- Hero Image -->
-      <section class="place-hero">
-        <img
-          src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDExMTZfNDIg%2FMDAxNzMxNzMwNjA4MzE0.N4cpxbF0nwHfyBY1hkT7u8RCRmuNhscsLCQQV7vfo-Yg.lcJ2dFYxS0CA8GQqs46br6azJgIugYEz9oJ24cwyK1Ug.JPEG%2FIMG_8386.jpeg"
-          alt="스탠다드번 대표 이미지"
-          class="place-hero-image"
-          loading="eager"
-        >
+      <!-- Hero Image Slider -->
+
+      <section class="place-hero place-slider">
+        <div class="place-slider-track">
+
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDExMTZfNDIg%2FMDAxNzMxNzMwNjA4MzE0.N4cpxbF0nwHfyBY1hkT7u8RCRmuNhscsLCQQV7vfo-Yg.lcJ2dFYxS0CA8GQqs46br6azJgIugYEz9oJ24cwyK1Ug.JPEG%2FIMG_8386.jpeg" alt="스탠다드번 이미지 1" loading="eager">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNTAxMjdfNjQg%2FMDAxNzM3OTU2Mzc4NzU4.Rc6ljXnKc7ZKiWH1K6Tkga4U_k2KyYsJByUV7zoTtZkg.Yn6BU_FR7nrKkV741W8R7JfzXdcXcKJdNnHkO4AUDJIg.JPEG%2F1000032264.jpg.jpg%3Ftype%3Dw1500_60_sharpen" alt="스탠다드번 이미지 2" loading="lazy">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTAxMTNfMjg4%2FMDAxNzM2NzY2ODgxMjg2.VFvfrNFjyUdmWRX9AJwz05s3DomUlgkYjJXdwUcr1Pkg.LgJPw3-SYCBpaxVb8oETNdJ5ph11ieJZG5NWF2nNf7sg.JPEG%2FKakaoTalk_20250113_195834113_27.jpg" alt="스탠다드번 이미지 3" loading="lazy">
+        </div>
+        </div>
+        <button class="place-slider-nav prev" aria-label="이전 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        <button class="place-slider-nav next" aria-label="다음 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+        <div class="place-slider-counter">1 / 3</div>
       </section>
 
       <!-- Place Info -->

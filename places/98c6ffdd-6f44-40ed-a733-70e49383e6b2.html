@@ -86,14 +86,35 @@
 
     <!-- Main Content -->
     <main>
-      <!-- Hero Image -->
-      <section class="place-hero">
-        <img
-          src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20211009_300%2F1633707952346sryXw_JPEG%2FAKsJx7XPjkuWiuhiPHWOuxOT.jpeg.jpg"
-          alt="부토 대표 이미지"
-          class="place-hero-image"
-          loading="eager"
-        >
+      <!-- Hero Image Slider -->
+
+      <section class="place-hero place-slider">
+        <div class="place-slider-track">
+
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20211009_300%2F1633707952346sryXw_JPEG%2FAKsJx7XPjkuWiuhiPHWOuxOT.jpeg.jpg" alt="부토 이미지 1" loading="eager">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDEwMDVfNTkg%2FMDAxNzI4MTI5MDQ4MTEy.wA00e_8CivjsG4k6LXO2v_C8TE0aPs_AIFxTh2kNi9Ug.rBIRDRD4T6FYmP6zYH0JUOB9FDySUGFCnP8BaMyixcIg.JPEG%2FIMG_6750.jpg" alt="부토 이미지 2" loading="lazy">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA5MjVfMjcw%2FMDAxNzI3MTkwOTI0MjQ2.gnqdOEVm3PTXAxod1Op5rJ69r6VIeFQeolvSQ6pwZuMg.hDFZrSQl3u3x1Y1Bm-96CMJohnESewjJciWXGdtjrQgg.JPEG%2FIMG_8290.jpg" alt="부토 이미지 3" loading="lazy">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNDEwMDVfNzgg%2FMDAxNzI4MTMyOTc0MDA2.dXyFNF1lvznS3nNvfxdZHhs9ocRlmmHD9l1RIYVaGScg.8LCfwc3OoLf-X5hPwjpmwjoHjBA4oaK5L5Sz-sz8-QMg.JPEG%2F20241005_193402.jpg.jpg%3Ftype%3Dw1500_60_sharpen" alt="부토 이미지 4" loading="lazy">
+        </div>
+        </div>
+        <button class="place-slider-nav prev" aria-label="이전 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        <button class="place-slider-nav next" aria-label="다음 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+        <div class="place-slider-counter">1 / 4</div>
       </section>
 
       <!-- Place Info -->

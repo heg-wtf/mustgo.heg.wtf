@@ -86,14 +86,32 @@
 
     <!-- Main Content -->
     <main>
-      <!-- Hero Image -->
-      <section class="place-hero">
-        <img
-          src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20160225_240%2F145637835393783kUG_JPEG%2F176175546252696_0.jpg"
-          alt="성수족발 대표 이미지"
-          class="place-hero-image"
-          loading="eager"
-        >
+      <!-- Hero Image Slider -->
+
+      <section class="place-hero place-slider">
+        <div class="place-slider-track">
+
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20160225_240%2F145637835393783kUG_JPEG%2F176175546252696_0.jpg" alt="성수족발 이미지 1" loading="eager">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20160225_113%2F14563783540433K8XJ_JPEG%2F176175546252696_1.jpg" alt="성수족발 이미지 2" loading="lazy">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20160225_144%2F1456378354120dJpl2_JPEG%2F176175546252696_2.jpg" alt="성수족발 이미지 3" loading="lazy">
+        </div>
+        </div>
+        <button class="place-slider-nav prev" aria-label="이전 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        <button class="place-slider-nav next" aria-label="다음 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+        <div class="place-slider-counter">1 / 3</div>
       </section>
 
       <!-- Place Info -->

@@ -86,14 +86,35 @@
 
     <!-- Main Content -->
     <main>
-      <!-- Hero Image -->
-      <section class="place-hero">
-        <img
-          src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240712_97%2F17207744255329TwK9_JPEG%2F1521166192911.jpg"
-          alt="까델루뽀 대표 이미지"
-          class="place-hero-image"
-          loading="eager"
-        >
+      <!-- Hero Image Slider -->
+
+      <section class="place-hero place-slider">
+        <div class="place-slider-track">
+
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240712_97%2F17207744255329TwK9_JPEG%2F1521166192911.jpg" alt="까델루뽀 이미지 1" loading="eager">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240712_111%2F1720774494782n8eLL_JPEG%2F1680166781577.jpg" alt="까델루뽀 이미지 2" loading="lazy">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNDEwMjlfNTUg%2FMDAxNzMwMTY1MDU2MDkw.atw4xNGJhAXcm4OwMx1L5xWwEGIcsgk9lWt07UG-5g8g.ozuSPWGNtKQKOTIZGt2KrVAyaZXPWi4OkNjh91xKlJ8g.JPEG%2F88359D48-A546-43CF-B745-D774490C373A.jpeg%3Ftype%3Dw1500_60_sharpen" alt="까델루뽀 이미지 3" loading="lazy">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDEwMjFfMjgg%2FMDAxNzI5NTA4NTcwNTU4.Lmw0AeysWDNYByFZ0rIX5EZniRMTHVTRAnPb2HM5hl8g.sBblddgRQlyt5-8QICwAThe-hV7pmT6Q3OKVEwDwiE4g.JPEG%2FIMG_0961_jpg.jpeg" alt="까델루뽀 이미지 4" loading="lazy">
+        </div>
+        </div>
+        <button class="place-slider-nav prev" aria-label="이전 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        <button class="place-slider-nav next" aria-label="다음 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+        <div class="place-slider-counter">1 / 4</div>
       </section>
 
       <!-- Place Info -->

@@ -86,14 +86,32 @@
 
     <!-- Main Content -->
     <main>
-      <!-- Hero Image -->
-      <section class="place-hero">
-        <img
-          src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240320_69%2F1710914082654XhDlp_PNG%2F%25B2%25C4%25B8%25F0%25BE%25C6%25BF%25DC%25B0%25FC2.png"
-          alt="꼼모아 대표 이미지"
-          class="place-hero-image"
-          loading="eager"
-        >
+      <!-- Hero Image Slider -->
+
+      <section class="place-hero place-slider">
+        <div class="place-slider-track">
+
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240320_69%2F1710914082654XhDlp_PNG%2F%25B2%25C4%25B8%25F0%25BE%25C6%25BF%25DC%25B0%25FC2.png" alt="꼼모아 이미지 1" loading="eager">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNDEwMjlfMTYy%2FMDAxNzMwMjAxMzQxOTA5.q2wzx9yVTQAJfbb-FnQptu5RrmKIXJpanj3r0CY-jEYg.x6oszPiVJQsEQ7AMFuCeSyGOdEQowDa2Ouz-0k4HGTIg.JPEG%2F9269516D-BEBA-4F21-98D8-1F5CC3672076.jpeg%3Ftype%3Dw1500_60_sharpen" alt="꼼모아 이미지 2" loading="lazy">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNDEwMjlfMTY5%2FMDAxNzMwMjAxMzQxNjE0.dKW0kIDvmwhooXroMPnCC13Bfwv_EWPOGb5FFDiihLgg.L7Mc3JPe_peJhb92was54hMlOzt0mmrA-ccVk_Oa3eYg.JPEG%2F450F3CC6-F67A-4EF0-9CB1-F41BB694C966.jpeg%3Ftype%3Dw1500_60_sharpen" alt="꼼모아 이미지 3" loading="lazy">
+        </div>
+        </div>
+        <button class="place-slider-nav prev" aria-label="이전 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        <button class="place-slider-nav next" aria-label="다음 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+        <div class="place-slider-counter">1 / 3</div>
       </section>
 
       <!-- Place Info -->

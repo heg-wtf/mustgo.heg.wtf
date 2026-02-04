@@ -86,14 +86,32 @@
 
     <!-- Main Content -->
     <main>
-      <!-- Hero Image -->
-      <section class="place-hero">
-        <img
-          src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240703_137%2F1719963318986kCPw9_JPEG%2FKakaoTalk_20240627_163151085_08.jpg"
-          alt="소랑호젠 대표 이미지"
-          class="place-hero-image"
-          loading="eager"
-        >
+      <!-- Hero Image Slider -->
+
+      <section class="place-hero place-slider">
+        <div class="place-slider-track">
+
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240703_137%2F1719963318986kCPw9_JPEG%2FKakaoTalk_20240627_163151085_08.jpg" alt="소랑호젠 이미지 1" loading="eager">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240703_51%2F1719963365571FmcjD_JPEG%2FKakaoTalk_20240627_163151085_18.jpg" alt="소랑호젠 이미지 2" loading="lazy">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNDEyMjRfNjgg%2FMDAxNzM1MDA1MjUzMjEw.90mZIKAQ-MejC2CzOSLCrCVE5GI-kVLyvuPXp5jjy-4g.JZ2U1Nl3v1Hj36yNplkKQyWkAwcfML_lpF_za1z2rKYg.JPEG%2F9076DA74-3920-48CA-B308-8691A3FE9366.jpeg%3Ftype%3Dw1500_60_sharpen" alt="소랑호젠 이미지 3" loading="lazy">
+        </div>
+        </div>
+        <button class="place-slider-nav prev" aria-label="이전 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        <button class="place-slider-nav next" aria-label="다음 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+        <div class="place-slider-counter">1 / 3</div>
       </section>
 
       <!-- Place Info -->

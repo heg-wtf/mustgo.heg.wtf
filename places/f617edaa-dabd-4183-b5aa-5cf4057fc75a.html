@@ -86,14 +86,32 @@
 
     <!-- Main Content -->
     <main>
-      <!-- Hero Image -->
-      <section class="place-hero">
-        <img
-          src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20200121_183%2F1579601390758CAmnt_JPEG%2FokAp_7ZEChew9R_JrVV2a8-9.jpeg.jpg"
-          alt="호랑이까페 대표 이미지"
-          class="place-hero-image"
-          loading="eager"
-        >
+      <!-- Hero Image Slider -->
+
+      <section class="place-hero place-slider">
+        <div class="place-slider-track">
+
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20200121_183%2F1579601390758CAmnt_JPEG%2FokAp_7ZEChew9R_JrVV2a8-9.jpeg.jpg" alt="호랑이까페 이미지 1" loading="eager">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20210809_66%2F1628476119285Xq3zP_JPEG%2F9-lxGVUx9X74Ih1tQSnTaSgu.jpeg.jpg" alt="호랑이까페 이미지 2" loading="lazy">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNDA5MTNfMTk4%2FMDAxNzI2MjExMjk2MzMz.LrBdHcqj5opbUUtyFDNQSsAWrAZ0Tgx_xhTfBlAGhXsg.V7ejAQCB3uFGS-TTsfKE7WGy9u0Bp7Gu4jM4Wkr2FLIg.JPEG%2FCBFF6B1A-3112-44BC-B025-4722ED236EEB.jpeg%3Ftype%3Dw1500_60_sharpen" alt="호랑이까페 이미지 3" loading="lazy">
+        </div>
+        </div>
+        <button class="place-slider-nav prev" aria-label="이전 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        <button class="place-slider-nav next" aria-label="다음 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+        <div class="place-slider-counter">1 / 3</div>
       </section>
 
       <!-- Place Info -->

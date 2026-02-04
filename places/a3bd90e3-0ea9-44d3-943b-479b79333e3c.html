@@ -86,14 +86,32 @@
 
     <!-- Main Content -->
     <main>
-      <!-- Hero Image -->
-      <section class="place-hero">
-        <img
-          src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20221007_212%2F16651062257035UoTL_JPEG%2FIMG_9BD6130A35BF-1.jpeg"
-          alt="테디뵈르하우스 용산점 대표 이미지"
-          class="place-hero-image"
-          loading="eager"
-        >
+      <!-- Hero Image Slider -->
+
+      <section class="place-hero place-slider">
+        <div class="place-slider-track">
+
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20221007_212%2F16651062257035UoTL_JPEG%2FIMG_9BD6130A35BF-1.jpeg" alt="테디뵈르하우스 용산점 이미지 1" loading="eager">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20221012_13%2F1665581636283q5QIO_JPEG%2FIMG_5515.jpg" alt="테디뵈르하우스 용산점 이미지 2" loading="lazy">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNTAxMThfMjM5%2FMDAxNzM3MTg2NTAzNDkx.gbF94txc7SpV8yYuA6VjCb_AEdLcmmS4Ub-rU9PI0nQg.yXi05idrNCRLj92VhqBZGjqzda8nZdJssg-zVgcJ8RYg.JPEG%2FDA074CF9-C48C-44F7-B350-5AA323E21696.jpeg%3Ftype%3Dw1500_60_sharpen" alt="테디뵈르하우스 용산점 이미지 3" loading="lazy">
+        </div>
+        </div>
+        <button class="place-slider-nav prev" aria-label="이전 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        <button class="place-slider-nav next" aria-label="다음 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+        <div class="place-slider-counter">1 / 3</div>
       </section>
 
       <!-- Place Info -->

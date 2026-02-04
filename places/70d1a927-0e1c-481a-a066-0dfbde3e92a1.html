@@ -86,14 +86,32 @@
 
     <!-- Main Content -->
     <main>
-      <!-- Hero Image -->
-      <section class="place-hero">
-        <img
-          src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA5MjdfMjg5%2FMDAxNzI3NDMyOTk4NzE1.PkTZ4-BkJMbSpfXahFNEn2BmuTx5_wizKYwL5fVWYzsg.2NJu1gI0E7FJr11_7FV8IWz0axtcjLGPddguFehIjw8g.JPEG%2FKakaoTalk_20240927_192707305_04.jpg"
-          alt="호라파 대표 이미지"
-          class="place-hero-image"
-          loading="eager"
-        >
+      <!-- Hero Image Slider -->
+
+      <section class="place-hero place-slider">
+        <div class="place-slider-track">
+
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA5MjdfMjg5%2FMDAxNzI3NDMyOTk4NzE1.PkTZ4-BkJMbSpfXahFNEn2BmuTx5_wizKYwL5fVWYzsg.2NJu1gI0E7FJr11_7FV8IWz0axtcjLGPddguFehIjw8g.JPEG%2FKakaoTalk_20240927_192707305_04.jpg" alt="호라파 이미지 1" loading="eager">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230403_159%2F1680486444386Nr6At_JPEG%2F17B459C7-7798-4BE6-87AF-38DCD544BCC2.jpeg" alt="호라파 이미지 2" loading="lazy">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTAxMDFfMjc0%2FMDAxNzM1NzQxMDA0MDA1.TYPsmxvOgUbv_RdgfaDzrlT-xd_MHZNDWGmBfxlIUfsg.yp_CVgyXW4kzIiZ9qRDhU5WXnLsbMHoNFq5xH9FDpLQg.JPEG%2FIMG_7118.jpg" alt="호라파 이미지 3" loading="lazy">
+        </div>
+        </div>
+        <button class="place-slider-nav prev" aria-label="이전 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        <button class="place-slider-nav next" aria-label="다음 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+        <div class="place-slider-counter">1 / 3</div>
       </section>
 
       <!-- Place Info -->

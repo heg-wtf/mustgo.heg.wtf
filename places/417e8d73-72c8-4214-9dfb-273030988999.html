@@ -86,14 +86,29 @@
 
     <!-- Main Content -->
     <main>
-      <!-- Hero Image -->
-      <section class="place-hero">
-        <img
-          src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20250125_225%2F173781199775126v0u_JPEG%2F1000001828.jpg"
-          alt="이짜 대표 이미지"
-          class="place-hero-image"
-          loading="eager"
-        >
+      <!-- Hero Image Slider -->
+
+      <section class="place-hero place-slider">
+        <div class="place-slider-track">
+
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20250125_225%2F173781199775126v0u_JPEG%2F1000001828.jpg" alt="이짜 이미지 1" loading="eager">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNTAxMzFfMTIy%2FMDAxNzM4MzI5NDYwOTE1.rmpMu8hMV2j8Lm6MKp3AyjJ9WtmY5iyqrhD7jRQLYjQg.UlC0PYALELWCJt3nrHXMzfYU4PV31qLUWyNKyQauxjIg.JPEG%2F4E5B2E79-C240-45A6-A828-84B2986BF094.jpeg%3Ftype%3Dw1500_60_sharpen" alt="이짜 이미지 2" loading="lazy">
+        </div>
+        </div>
+        <button class="place-slider-nav prev" aria-label="이전 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        <button class="place-slider-nav next" aria-label="다음 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+        <div class="place-slider-counter">1 / 2</div>
       </section>
 
       <!-- Place Info -->

@@ -86,14 +86,32 @@
 
     <!-- Main Content -->
     <main>
-      <!-- Hero Image -->
-      <section class="place-hero">
-        <img
-          src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220428_176%2F1651153854790LHgf6_JPEG%2F990D3F6D-9490-4B8C-A308-CE2D141FD6D5.jpeg"
-          alt="키친갈매기 대표 이미지"
-          class="place-hero-image"
-          loading="eager"
-        >
+      <!-- Hero Image Slider -->
+
+      <section class="place-hero place-slider">
+        <div class="place-slider-track">
+
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220428_176%2F1651153854790LHgf6_JPEG%2F990D3F6D-9490-4B8C-A308-CE2D141FD6D5.jpeg" alt="키친갈매기 이미지 1" loading="eager">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNTAxMzFfMTUy%2FMDAxNzM4Mjk0ODcwMzAx.37VtAW_XmkVO7tJiw61g_VjYldccrfJASezSXMA_C5sg.pEcWY6mnaMgdlm2eW7OB3cgWGM5RddwWBB16o0eeNr0g.JPEG%2F78F039E0-DAC1-45FB-B289-7ED9BC4B7B1F.jpeg%3Ftype%3Dw1500_60_sharpen" alt="키친갈매기 이미지 2" loading="lazy">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNTAxMzFfNjcg%2FMDAxNzM4Mjk0ODcwMjc2.KeXuKMoLsSxOZ3TR_LpBy_XOsBku-m4JeIhbAuDfLQAg.nUrANqJqExH6CGIUiBMjWEQKQl2z2bcpG5Somu108Ikg.JPEG%2FFF3B6289-6C4D-4241-B3A4-0A2C1732CC0C.jpeg%3Ftype%3Dw1500_60_sharpen" alt="키친갈매기 이미지 3" loading="lazy">
+        </div>
+        </div>
+        <button class="place-slider-nav prev" aria-label="이전 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        <button class="place-slider-nav next" aria-label="다음 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+        <div class="place-slider-counter">1 / 3</div>
       </section>
 
       <!-- Place Info -->

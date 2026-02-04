@@ -86,14 +86,32 @@
 
     <!-- Main Content -->
     <main>
-      <!-- Hero Image -->
-      <section class="place-hero">
-        <img
-          src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230212_2%2F1676156369904PiY3V_JPEG%2FScreenshot_20230212_075849_Instagram.jpg"
-          alt="평안도족발집 대표 이미지"
-          class="place-hero-image"
-          loading="eager"
-        >
+      <!-- Hero Image Slider -->
+
+      <section class="place-hero place-slider">
+        <div class="place-slider-track">
+
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230212_2%2F1676156369904PiY3V_JPEG%2FScreenshot_20230212_075849_Instagram.jpg" alt="평안도족발집 이미지 1" loading="eager">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNDExMDZfMTc3%2FMDAxNzMwODg2NjgzODI1.YM-vczfaTbqqOT7rqCSSJ8pMO4aQYm4KQY1V9l8BAfcg.9XVaQlkBi8rOs9xjEt26LKryA-j-ASc5SXDDbOlA4PIg.JPEG%2F1000080256.jpg.jpg%3Ftype%3Dw1500_60_sharpen" alt="평안도족발집 이미지 2" loading="lazy">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA2MjFfMTM2%2FMDAxNzE4OTUxODE2OTc5.rmRlVB2itYzvEEDmzNP3l98kq2HbdgK91Nb5vGK1g6og.MiRDy4wMrWaq_4EgSGnGBPWXK7HHpc1RWr690JEX5Mog.JPEG%2FKakaoTalk_20240619_105715394_08.jpg" alt="평안도족발집 이미지 3" loading="lazy">
+        </div>
+        </div>
+        <button class="place-slider-nav prev" aria-label="이전 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        <button class="place-slider-nav next" aria-label="다음 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+        <div class="place-slider-counter">1 / 3</div>
       </section>
 
       <!-- Place Info -->

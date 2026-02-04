@@ -86,14 +86,32 @@
 
     <!-- Main Content -->
     <main>
-      <!-- Hero Image -->
-      <section class="place-hero">
-        <img
-          src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230417_204%2F1681696543373AYulj_JPEG%2FDSC01465_.JPG"
-          alt="미미옥 신용산점 대표 이미지"
-          class="place-hero-image"
-          loading="eager"
-        >
+      <!-- Hero Image Slider -->
+
+      <section class="place-hero place-slider">
+        <div class="place-slider-track">
+
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230417_204%2F1681696543373AYulj_JPEG%2FDSC01465_.JPG" alt="미미옥 신용산점 이미지 1" loading="eager">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNDEwMDZfMzEg%2FMDAxNzI4MTUzNzczOTMw.5eA-4bQZxRCRpCJ9L_Cu3lDdSNEOt-OYWV7SkZZocY4g.bj9prHRXhDkih9mvBfIVa3_6Ns9BAaVpdnOKdPKW4-Ig.JPEG%2F20982BE4-3932-4ADB-A5E4-4475BE45410C.jpeg%3Ftype%3Dw1500_60_sharpen" alt="미미옥 신용산점 이미지 2" loading="lazy">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzEyMjNfMzUg%2FMDAxNzAzMjY4NDM3NDUw._yrT55MGE44liQqexUqZrmQgXP4onQ4Rcjha_QukbC4g.cNfnbNj8wltOFaCpV5CRSUgvDZ2wBizsKiybERzE6i4g.JPEG.nkmsky%2FIMG_2640.JPG" alt="미미옥 신용산점 이미지 3" loading="lazy">
+        </div>
+        </div>
+        <button class="place-slider-nav prev" aria-label="이전 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        <button class="place-slider-nav next" aria-label="다음 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+        <div class="place-slider-counter">1 / 3</div>
       </section>
 
       <!-- Place Info -->

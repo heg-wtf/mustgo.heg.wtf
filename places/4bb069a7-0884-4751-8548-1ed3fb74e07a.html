@@ -86,14 +86,32 @@
 
     <!-- Main Content -->
     <main>
-      <!-- Hero Image -->
-      <section class="place-hero">
-        <img
-          src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20241001_298%2F1727768140741B1x47_GIF%2FKakaoTalk_20240925_161843183.gif"
-          alt="형제상회 대표 이미지"
-          class="place-hero-image"
-          loading="eager"
-        >
+      <!-- Hero Image Slider -->
+
+      <section class="place-hero place-slider">
+        <div class="place-slider-track">
+
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20241001_298%2F1727768140741B1x47_GIF%2FKakaoTalk_20240925_161843183.gif" alt="형제상회 이미지 1" loading="eager">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNDEwMjNfMjU3%2FMDAxNzI5NjY1MDY4Njk2.-muUPo9JsaeeG58AzC74AKCbo2fp75TV18I3VTAXXKIg.iR7lKxE2tVYpR7zqBueiOm1QLxAtG0I9rKmFn9WQh_Mg.JPEG%2F1000008871.jpg.jpg%3Ftype%3Dw1500_60_sharpen" alt="형제상회 이미지 2" loading="lazy">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA2MjRfMTI0%2FMDAxNzE5MjM1NTM3ODI3.54ZNMwTj9zjSpyyFn28ZwJjKB3xEhwEZ-jhgqr5kyl4g.fc4EHvUcF_jHqB5HwsL4VFpC3fpzN3B_2L9jCi7yP1kg.JPEG%2F1719200915416.jpg" alt="형제상회 이미지 3" loading="lazy">
+        </div>
+        </div>
+        <button class="place-slider-nav prev" aria-label="이전 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        <button class="place-slider-nav next" aria-label="다음 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+        <div class="place-slider-counter">1 / 3</div>
       </section>
 
       <!-- Place Info -->

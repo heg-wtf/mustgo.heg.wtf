@@ -86,14 +86,32 @@
 
     <!-- Main Content -->
     <main>
-      <!-- Hero Image -->
-      <section class="place-hero">
-        <img
-          src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20211202_76%2F1638427088669n7NKT_JPEG%2F%25C0%25FA%25C7%25D8%25BB%25F3_%252817%2529.jpg"
-          alt="온지음 레스토랑 대표 이미지"
-          class="place-hero-image"
-          loading="eager"
-        >
+      <!-- Hero Image Slider -->
+
+      <section class="place-hero place-slider">
+        <div class="place-slider-track">
+
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20211202_76%2F1638427088669n7NKT_JPEG%2F%25C0%25FA%25C7%25D8%25BB%25F3_%252817%2529.jpg" alt="온지음 레스토랑 이미지 1" loading="eager">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20211202_272%2F1638427119550JFjgU_JPEG%2F%25C0%25FA%25C7%25D8%25BB%25F3_%25289%2529.jpg" alt="온지음 레스토랑 이미지 2" loading="lazy">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDExMDRfOTIg%2FMDAxNzMwNzAwODk5Mjcx._x61JkuxTlLEqhOprhLBVvPh6wWhXQmeXy6EjxpVuyQg.HaK6UahGqS1QdYCJrzbQAO7TXibqlChC478b5cQppFog.JPEG%2FIMG_2244.jpg" alt="온지음 레스토랑 이미지 3" loading="lazy">
+        </div>
+        </div>
+        <button class="place-slider-nav prev" aria-label="이전 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        <button class="place-slider-nav next" aria-label="다음 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+        <div class="place-slider-counter">1 / 3</div>
       </section>
 
       <!-- Place Info -->

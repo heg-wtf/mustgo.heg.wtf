@@ -86,14 +86,32 @@
 
     <!-- Main Content -->
     <main>
-      <!-- Hero Image -->
-      <section class="place-hero">
-        <img
-          src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220111_29%2F1641834408431fHBGr_JPEG%2F6DD68AB1-75B9-4D8C-A093-A10A9C50973D.jpeg"
-          alt="델리노쉬 대표 이미지"
-          class="place-hero-image"
-          loading="eager"
-        >
+      <!-- Hero Image Slider -->
+
+      <section class="place-hero place-slider">
+        <div class="place-slider-track">
+
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220111_29%2F1641834408431fHBGr_JPEG%2F6DD68AB1-75B9-4D8C-A093-A10A9C50973D.jpeg" alt="델리노쉬 이미지 1" loading="eager">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNTAxMDVfMjAz%2FMDAxNzM2MDYwNTA1ODc4.VJcju44OL8X7SRCivRyuGkOknJEmLeQjq3ppFeHkNlYg.LQQ3t-wo7-V4JkU3b1pV7rrMtWjqjcokhtuXrE-n-VUg.JPEG%2F3C857021-396C-4EB7-B4BC-5FC90F08DECC.jpeg%3Ftype%3Dw1500_60_sharpen" alt="델리노쉬 이미지 2" loading="lazy">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA5MjhfMjIx%2FMDAxNzI3NDc5MTk5ODIy.Yjclf1XSZ3EWjj0Ia6cX483RnNCKpSeldSeOGJEiC20g.6CnRipIWi5fkCsujky7NGi1lY84x8jJNV824Rz5QqV4g.JPEG%2FIMG_1968.jpeg" alt="델리노쉬 이미지 3" loading="lazy">
+        </div>
+        </div>
+        <button class="place-slider-nav prev" aria-label="이전 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        <button class="place-slider-nav next" aria-label="다음 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+        <div class="place-slider-counter">1 / 3</div>
       </section>
 
       <!-- Place Info -->

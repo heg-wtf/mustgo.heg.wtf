@@ -86,14 +86,32 @@
 
     <!-- Main Content -->
     <main>
-      <!-- Hero Image -->
-      <section class="place-hero">
-        <img
-          src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20221215_167%2F1671050748255eHWhb_JPEG%2F4313_20221214082356_ux6nm.jpg"
-          alt="스타벅스 경동1960점 대표 이미지"
-          class="place-hero-image"
-          loading="eager"
-        >
+      <!-- Hero Image Slider -->
+
+      <section class="place-hero place-slider">
+        <div class="place-slider-track">
+
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20221215_167%2F1671050748255eHWhb_JPEG%2F4313_20221214082356_ux6nm.jpg" alt="스타벅스 경동1960점 이미지 1" loading="eager">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20221215_200%2F1671050748353IRyTR_JPEG%2F4313_20221214082401_37qzj.jpg" alt="스타벅스 경동1960점 이미지 2" loading="lazy">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA3MThfOTQg%2FMDAxNzIxMjM1NzA4NTA4.yGUpm_V6dW8b8xHKdUpCIpSHKXsN1pg2sCKFo8it12cg.1Bqgbl3mqt2IKLJ2_COQeDxySPr0xuMNtCUHBhgqbI0g.JPEG%2FDSCF8747.jpg" alt="스타벅스 경동1960점 이미지 3" loading="lazy">
+        </div>
+        </div>
+        <button class="place-slider-nav prev" aria-label="이전 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        <button class="place-slider-nav next" aria-label="다음 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+        <div class="place-slider-counter">1 / 3</div>
       </section>
 
       <!-- Place Info -->

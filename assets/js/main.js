@@ -175,6 +175,104 @@
   }
 
   /**
+   * 이미지 슬라이더 초기화
+   */
+  function initImageSlider() {
+    const slider = document.querySelector('.place-slider');
+    if (!slider) return;
+
+    const track = slider.querySelector('.place-slider-track');
+    const slides = slider.querySelectorAll('.place-slider-slide');
+    const prevButton = slider.querySelector('.place-slider-nav.prev');
+    const nextButton = slider.querySelector('.place-slider-nav.next');
+    const counter = slider.querySelector('.place-slider-counter');
+    const dotsContainer = slider.querySelector('.place-slider-dots');
+
+    if (slides.length <= 1) {
+      // 이미지가 1개면 네비게이션 숨김
+      if (prevButton) prevButton.style.display = 'none';
+      if (nextButton) nextButton.style.display = 'none';
+      if (counter) counter.style.display = 'none';
+      if (dotsContainer) dotsContainer.style.display = 'none';
+      return;
+    }
+
+    let currentIndex = 0;
+    const totalSlides = slides.length;
+
+    function updateSlider() {
+      track.style.transform = 'translateX(-' + (currentIndex * 100) + '%)';
+
+      // 카운터 업데이트
+      if (counter) {
+        counter.textContent = (currentIndex + 1) + ' / ' + totalSlides;
+      }
+
+      // Dots 업데이트
+      if (dotsContainer) {
+        dotsContainer.querySelectorAll('.place-slider-dot').forEach(function(dot, index) {
+          dot.classList.toggle('active', index === currentIndex);
+        });
+      }
+
+      // 버튼 상태 업데이트
+      if (prevButton) prevButton.disabled = currentIndex === 0;
+      if (nextButton) nextButton.disabled = currentIndex === totalSlides - 1;
+    }
+
+    function goToSlide(index) {
+      currentIndex = Math.max(0, Math.min(index, totalSlides - 1));
+      updateSlider();
+    }
+
+    // 버튼 이벤트
+    if (prevButton) {
+      prevButton.addEventListener('click', function() {
+        goToSlide(currentIndex - 1);
+      });
+    }
+
+    if (nextButton) {
+      nextButton.addEventListener('click', function() {
+        goToSlide(currentIndex + 1);
+      });
+    }
+
+    // Dots 이벤트
+    if (dotsContainer) {
+      dotsContainer.querySelectorAll('.place-slider-dot').forEach(function(dot, index) {
+        dot.addEventListener('click', function() {
+          goToSlide(index);
+        });
+      });
+    }
+
+    // 터치 스와이프 지원
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    slider.addEventListener('touchstart', function(event) {
+      touchStartX = event.changedTouches[0].screenX;
+    }, { passive: true });
+
+    slider.addEventListener('touchend', function(event) {
+      touchEndX = event.changedTouches[0].screenX;
+      const diff = touchStartX - touchEndX;
+
+      if (Math.abs(diff) > 50) {
+        if (diff > 0) {
+          goToSlide(currentIndex + 1);
+        } else {
+          goToSlide(currentIndex - 1);
+        }
+      }
+    }, { passive: true });
+
+    // 초기 상태
+    updateSlider();
+  }
+
+  /**
    * 이미지 지연 로딩
    */
   function lazyLoadImages() {
@@ -228,6 +326,7 @@
     handleShareButton();
     handleBookmarkButton();
     lazyLoadImages();
+    initImageSlider();
   }
 
   // 전역 함수로 노출 (앱에서 호출 가능)

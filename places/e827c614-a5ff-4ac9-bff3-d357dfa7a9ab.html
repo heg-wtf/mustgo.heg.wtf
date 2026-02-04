@@ -86,14 +86,32 @@
 
     <!-- Main Content -->
     <main>
-      <!-- Hero Image -->
-      <section class="place-hero">
-        <img
-          src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220728_59%2F1658992025805Rh9rQ_JPEG%2FKakaoTalk_20220728_155857698.jpg"
-          alt="삼원가든 대표 이미지"
-          class="place-hero-image"
-          loading="eager"
-        >
+      <!-- Hero Image Slider -->
+
+      <section class="place-hero place-slider">
+        <div class="place-slider-track">
+
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220728_59%2F1658992025805Rh9rQ_JPEG%2FKakaoTalk_20220728_155857698.jpg" alt="삼원가든 이미지 1" loading="eager">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220613_198%2F16550836830801dGrg_JPEG%2F0526_%25C0%25CE%25BD%25BA%25C5%25B8%25B1%25D7%25B7%25A5_7_1.jpg" alt="삼원가든 이미지 2" loading="lazy">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA4MjNfMjI0%2FMDAxNzI0NDE5MzIzMzUz.CQO79fY0oyjVwujY4P9rXCeEI69JQXprqlWUrZZd1F4g.MQapnLX0jpKvYHif0YWfeC_S8g7uKi7hYqcdUkHgUxwg.JPEG%2F1724416647801%25A3%25AD14.jpg" alt="삼원가든 이미지 3" loading="lazy">
+        </div>
+        </div>
+        <button class="place-slider-nav prev" aria-label="이전 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        <button class="place-slider-nav next" aria-label="다음 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+        <div class="place-slider-counter">1 / 3</div>
       </section>
 
       <!-- Place Info -->

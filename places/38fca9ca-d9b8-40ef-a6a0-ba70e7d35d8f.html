@@ -86,14 +86,29 @@
 
     <!-- Main Content -->
     <main>
-      <!-- Hero Image -->
-      <section class="place-hero">
-        <img
-          src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDAxMjdfMjkg%2FMDAxNzA2MzIzNDk4OTY0.L5WDZ4psQS6wDi6LOC4DSZLHxGXHGv-KdBk7bYRAxfwg.YP9HEzC5vSiuKe3GfIPa5Sqqg6YLpCnWwuKVB52iXZcg.JPEG.djawl896%2F20240107%25A3%25DF141355.jpg%23900x675"
-          alt="코끼리베이글 성수 대표 이미지"
-          class="place-hero-image"
-          loading="eager"
-        >
+      <!-- Hero Image Slider -->
+
+      <section class="place-hero place-slider">
+        <div class="place-slider-track">
+
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDAxMjdfMjkg%2FMDAxNzA2MzIzNDk4OTY0.L5WDZ4psQS6wDi6LOC4DSZLHxGXHGv-KdBk7bYRAxfwg.YP9HEzC5vSiuKe3GfIPa5Sqqg6YLpCnWwuKVB52iXZcg.JPEG.djawl896%2F20240107%25A3%25DF141355.jpg%23900x675" alt="코끼리베이글 성수 이미지 1" loading="eager">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDEwMjJfNjIg%2FMDAxNzI5NTg5NTUxNDgx.-MpEP8hOAjOq0G-xh3HeywSFlqUY0h5ew32qCy_fE1Eg.QmGhOJIbjumi77bh03810t0LEbnKmRFmopT6BLhmO0sg.JPEG%2FKakaoTalk_20241022_182040684.jpg" alt="코끼리베이글 성수 이미지 2" loading="lazy">
+        </div>
+        </div>
+        <button class="place-slider-nav prev" aria-label="이전 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        <button class="place-slider-nav next" aria-label="다음 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+        <div class="place-slider-counter">1 / 2</div>
       </section>
 
       <!-- Place Info -->

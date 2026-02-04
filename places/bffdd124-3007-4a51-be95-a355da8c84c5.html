@@ -86,14 +86,32 @@
 
     <!-- Main Content -->
     <main>
-      <!-- Hero Image -->
-      <section class="place-hero">
-        <img
-          src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20180718_99%2F1531886095927sdFbz_JPEG%2F-BK7bS9jupIK5zYbHZCqJdYg.JPG.jpg"
-          alt="포비 광화문 대표 이미지"
-          class="place-hero-image"
-          loading="eager"
-        >
+      <!-- Hero Image Slider -->
+
+      <section class="place-hero place-slider">
+        <div class="place-slider-track">
+
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20180718_99%2F1531886095927sdFbz_JPEG%2F-BK7bS9jupIK5zYbHZCqJdYg.JPG.jpg" alt="포비 광화문 이미지 1" loading="eager">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20180718_79%2F1531886303602h5eVU_JPEG%2FFKg41R4pg-zh9qMTESNY2_lK.jpg" alt="포비 광화문 이미지 2" loading="lazy">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA5MTRfOCAg%2FMDAxNzI2MzI1NjIwMDM0.VTayfm_Alb-BCpVQsu5aoDEe4HLkKYSzrqnPjG_ZHJUg.1CWxf8Av8tmmYvgiY4eKbKKINrD9Bi6swItIYggRSM8g.JPEG%2FP9030759.JPG" alt="포비 광화문 이미지 3" loading="lazy">
+        </div>
+        </div>
+        <button class="place-slider-nav prev" aria-label="이전 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        <button class="place-slider-nav next" aria-label="다음 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+        <div class="place-slider-counter">1 / 3</div>
       </section>
 
       <!-- Place Info -->

@@ -86,14 +86,29 @@
 
     <!-- Main Content -->
     <main>
-      <!-- Hero Image -->
-      <section class="place-hero">
-        <img
-          src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20231115_127%2F1700028145954rJH5L_JPEG%2F%25BA%25CE%25C3%25A4%25BB%25EC%25BD%25BA%25C5%25D7%25C5%25B0%25B5%25BF300.jpg"
-          alt="배키욘방 대표 이미지"
-          class="place-hero-image"
-          loading="eager"
-        >
+      <!-- Hero Image Slider -->
+
+      <section class="place-hero place-slider">
+        <div class="place-slider-track">
+
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20231115_127%2F1700028145954rJH5L_JPEG%2F%25BA%25CE%25C3%25A4%25BB%25EC%25BD%25BA%25C5%25D7%25C5%25B0%25B5%25BF300.jpg" alt="배키욘방 이미지 1" loading="eager">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNTAxMjJfMTQ0%2FMDAxNzM3NTM5NzA3MDI5.b8T05XmVcGZI3jp00CiL8MWPGx2SDrqgcrt38OujjS8g.S4ajki4p4ROF90dUx7po8ymWJZDH4LUQCanDdIwOr6Mg.JPEG%2F1000033660.jpg.jpg%3Ftype%3Dw1500_60_sharpen" alt="배키욘방 이미지 2" loading="lazy">
+        </div>
+        </div>
+        <button class="place-slider-nav prev" aria-label="이전 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        <button class="place-slider-nav next" aria-label="다음 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+        <div class="place-slider-counter">1 / 2</div>
       </section>
 
       <!-- Place Info -->

@@ -86,14 +86,32 @@
 
     <!-- Main Content -->
     <main>
-      <!-- Hero Image -->
-      <section class="place-hero">
-        <img
-          src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230920_245%2F1695214725773h5WCQ_JPEG%2FIMG_8734.jpeg"
-          alt="투아투아 대표 이미지"
-          class="place-hero-image"
-          loading="eager"
-        >
+      <!-- Hero Image Slider -->
+
+      <section class="place-hero place-slider">
+        <div class="place-slider-track">
+
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230920_245%2F1695214725773h5WCQ_JPEG%2FIMG_8734.jpeg" alt="투아투아 이미지 1" loading="eager">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA1MjZfMTc0%2FMDAxNzE2Njk4NDUzODcw.PqzQkpT1kJqxc96D6obDQ_V_TRUaNJPLbDpy-5YczUIg.piOeQMaCNzs-IetQzYTKyxFWugoZu7egGPVpuYQ-xwkg.JPEG%2FIMG_8999.jpg" alt="투아투아 이미지 2" loading="lazy">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNDEyMTNfMjU3%2FMDAxNzM0MDYzMDAxMTQx.VxN7bZfUGLcFQ6C2IKjUnm5n1IOEs-FXlH1VK3YicqUg.ORa9QIiAwo_xqSCsnmHIR70ro2bc4NhPcvHCil2ux9Ig.JPEG%2FA36CB85C-755B-4642-8861-F416E48ABCBF.jpeg%3Ftype%3Dw1500_60_sharpen" alt="투아투아 이미지 3" loading="lazy">
+        </div>
+        </div>
+        <button class="place-slider-nav prev" aria-label="이전 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        <button class="place-slider-nav next" aria-label="다음 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+        <div class="place-slider-counter">1 / 3</div>
       </section>
 
       <!-- Place Info -->

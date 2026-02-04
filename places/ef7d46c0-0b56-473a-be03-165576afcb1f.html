@@ -86,14 +86,32 @@
 
     <!-- Main Content -->
     <main>
-      <!-- Hero Image -->
-      <section class="place-hero">
-        <img
-          src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230321_32%2F1679368739662iLUaP_JPEG%2F2B21C9F2-290A-466A-81FE-D9018C014BB1.jpeg"
-          alt="마사마드레 대표 이미지"
-          class="place-hero-image"
-          loading="eager"
-        >
+      <!-- Hero Image Slider -->
+
+      <section class="place-hero place-slider">
+        <div class="place-slider-track">
+
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230321_32%2F1679368739662iLUaP_JPEG%2F2B21C9F2-290A-466A-81FE-D9018C014BB1.jpeg" alt="마사마드레 이미지 1" loading="eager">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230321_151%2F1679368676286HeydP_JPEG%2FFB6E7AAB-DB20-4892-9C7B-05699156FBD8.jpeg" alt="마사마드레 이미지 2" loading="lazy">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNDEyMTJfODcg%2FMDAxNzM0MDAyNjQwNjcz.hsbJCBsLPgUOcSCHdSShL-N51NhJFDhBa938OGNDrMQg._7FPYXAtKogWRt3CK2afsttLiMBmYR9zVjf9xkAbuP0g.JPEG%2F4E1678E9-9B18-4FB5-9AA6-113E95F50ACC.jpeg%3Ftype%3Dw1500_60_sharpen" alt="마사마드레 이미지 3" loading="lazy">
+        </div>
+        </div>
+        <button class="place-slider-nav prev" aria-label="이전 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        <button class="place-slider-nav next" aria-label="다음 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+        <div class="place-slider-counter">1 / 3</div>
       </section>
 
       <!-- Place Info -->

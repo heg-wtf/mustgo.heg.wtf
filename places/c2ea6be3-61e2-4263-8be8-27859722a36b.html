@@ -86,14 +86,32 @@
 
     <!-- Main Content -->
     <main>
-      <!-- Hero Image -->
-      <section class="place-hero">
-        <img
-          src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230522_112%2F1684727062443d2ppM_JPEG%2F1.jpg"
-          alt="프린츠 양재점 대표 이미지"
-          class="place-hero-image"
-          loading="eager"
-        >
+      <!-- Hero Image Slider -->
+
+      <section class="place-hero place-slider">
+        <div class="place-slider-track">
+
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230522_112%2F1684727062443d2ppM_JPEG%2F1.jpg" alt="프린츠 양재점 이미지 1" loading="eager">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNDEyMDFfMjYz%2FMDAxNzMzMDE2MzcyMzIz.o_vN0qf0mvHXN1FwTnnjV7RBRVht-bzEo-z_5Voaw2Ag.W66W-dB8tpu_qKw-xdRZq2Ixn4CTsTpb_9JkG7_U7Gsg.JPEG%2FF4D36B29-325D-4744-BD43-9FB35D2CF901.jpeg%3Ftype%3Dw1500_60_sharpen" alt="프린츠 양재점 이미지 2" loading="lazy">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDExMTNfMTYg%2FMDAxNzMxNDI0MDAyNTM0.hlc2DarCNZ57yb6KNcFaBdpIN_8euSVEKgTzt590QrEg.jc742o7e1jUSyaKtYygurdZ2ylK8eRX3PcQs2a19tHYg.JPEG%2FKakaoTalk_20241110_182349346_04.jpg" alt="프린츠 양재점 이미지 3" loading="lazy">
+        </div>
+        </div>
+        <button class="place-slider-nav prev" aria-label="이전 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        <button class="place-slider-nav next" aria-label="다음 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+        <div class="place-slider-counter">1 / 3</div>
       </section>
 
       <!-- Place Info -->

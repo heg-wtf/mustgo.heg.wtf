@@ -86,14 +86,32 @@
 
     <!-- Main Content -->
     <main>
-      <!-- Hero Image -->
-      <section class="place-hero">
-        <img
-          src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230220_179%2F1676886105779H4I2z_JPEG%2F20230217_155358.jpg"
-          alt="백경식당 대표 이미지"
-          class="place-hero-image"
-          loading="eager"
-        >
+      <!-- Hero Image Slider -->
+
+      <section class="place-hero place-slider">
+        <div class="place-slider-track">
+
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230220_179%2F1676886105779H4I2z_JPEG%2F20230217_155358.jpg" alt="백경식당 이미지 1" loading="eager">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNDA3MThfMjA5%2FMDAxNzIxMjU3MjQ1OTI4.tv7ICutoa_pKAi4fHhNWumhvjgQADW3XxE0W0STWPNQg.uhzmu9vLuceP0FYX4YlzQXy4c9NXq5jTedT-fk2IVikg.JPEG%2F9A1B7AD9-6DFD-4482-9DF5-FB9ED7949DC6.jpeg%3Ftype%3Dw1500_60_sharpen" alt="백경식당 이미지 2" loading="lazy">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNDAzMTRfMTQ4%2FMDAxNzEwMzg0OTQxNjQx.00PUW2s3BuKmo3ht91Ygv4Zcptdqqt2YlrwjsYtzYIIg.Cy2rl9jp5hkegUzgCYt2gs7F8tl1dbRC_eVaxuGi3AMg.JPEG%2F8E18FB28-9ECD-492F-8A04-BB4E89DE2E59.jpeg%3Ftype%3Dw1500_60_sharpen" alt="백경식당 이미지 3" loading="lazy">
+        </div>
+        </div>
+        <button class="place-slider-nav prev" aria-label="이전 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        <button class="place-slider-nav next" aria-label="다음 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+        <div class="place-slider-counter">1 / 3</div>
       </section>
 
       <!-- Place Info -->

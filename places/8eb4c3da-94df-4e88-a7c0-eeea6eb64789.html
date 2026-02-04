@@ -86,14 +86,29 @@
 
     <!-- Main Content -->
     <main>
-      <!-- Hero Image -->
-      <section class="place-hero">
-        <img
-          src="https://search.pstatic.net/common/?src=https%3A%2F%2Fnaverbooking-phinf.pstatic.net%2F20240322_139%2F1711078641540UFiIl_PNG%2F%25BD%25BA%25C5%25A9%25B8%25B0%25BC%25A6_2024-03-22_%25BF%25C0%25C8%25C4_12.28.57.png"
-          alt="파이어로버스와인클럽 대표 이미지"
-          class="place-hero-image"
-          loading="eager"
-        >
+      <!-- Hero Image Slider -->
+
+      <section class="place-hero place-slider">
+        <div class="place-slider-track">
+
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fnaverbooking-phinf.pstatic.net%2F20240322_139%2F1711078641540UFiIl_PNG%2F%25BD%25BA%25C5%25A9%25B8%25B0%25BC%25A6_2024-03-22_%25BF%25C0%25C8%25C4_12.28.57.png" alt="파이어로버스와인클럽 이미지 1" loading="eager">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220129_60%2F1643443120943jniGB_JPEG%2FDECA5930-25CC-4127-AEBC-C5B4B53E47FC.jpeg" alt="파이어로버스와인클럽 이미지 2" loading="lazy">
+        </div>
+        </div>
+        <button class="place-slider-nav prev" aria-label="이전 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        <button class="place-slider-nav next" aria-label="다음 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+        <div class="place-slider-counter">1 / 2</div>
       </section>
 
       <!-- Place Info -->

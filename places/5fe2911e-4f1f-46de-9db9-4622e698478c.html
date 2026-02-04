@@ -86,14 +86,32 @@
 
     <!-- Main Content -->
     <main>
-      <!-- Hero Image -->
-      <section class="place-hero">
-        <img
-          src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240718_116%2F17212846846682aONM_JPEG%2F%25BF%25CF%25B0%25F8%25BB%25E7%25C1%25F8_%25287%2529.jpg"
-          alt="스탠다드브레드 도산 대표 이미지"
-          class="place-hero-image"
-          loading="eager"
-        >
+      <!-- Hero Image Slider -->
+
+      <section class="place-hero place-slider">
+        <div class="place-slider-track">
+
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240718_116%2F17212846846682aONM_JPEG%2F%25BF%25CF%25B0%25F8%25BB%25E7%25C1%25F8_%25287%2529.jpg" alt="스탠다드브레드 도산 이미지 1" loading="eager">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240718_71%2F1721284684447EYnYh_JPEG%2F240708_%25BD%25BA%25C5%25C4%25B4%25D9%25B5%25E5%25BA%25EA%25B7%25B9%25B5%25E5_01.jpg" alt="스탠다드브레드 도산 이미지 2" loading="lazy">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240718_62%2F1721284684816xB8VV_JPEG%2F%25BF%25CF%25B0%25F8%25BB%25E7%25C1%25F8_%25288%2529.jpg" alt="스탠다드브레드 도산 이미지 3" loading="lazy">
+        </div>
+        </div>
+        <button class="place-slider-nav prev" aria-label="이전 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        <button class="place-slider-nav next" aria-label="다음 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+        <div class="place-slider-counter">1 / 3</div>
       </section>
 
       <!-- Place Info -->

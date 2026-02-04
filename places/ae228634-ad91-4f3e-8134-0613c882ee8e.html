@@ -86,14 +86,32 @@
 
     <!-- Main Content -->
     <main>
-      <!-- Hero Image -->
-      <section class="place-hero">
-        <img
-          src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA5MTdfMjUy%2FMDAxNzI2NTAxMTMzNTA4.ntaxZo_YFy8X3ZZn1ET7Q3Lxa7n0DplkCdAiFe7URr0g.BU50OL8kz4iKvb4L9P1VJ-76cirerXAgNNKGj_7xhYwg.JPEG%2FIMG_3688.jpg"
-          alt="장군보쌈 대표 이미지"
-          class="place-hero-image"
-          loading="eager"
-        >
+      <!-- Hero Image Slider -->
+
+      <section class="place-hero place-slider">
+        <div class="place-slider-track">
+
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA5MTdfMjUy%2FMDAxNzI2NTAxMTMzNTA4.ntaxZo_YFy8X3ZZn1ET7Q3Lxa7n0DplkCdAiFe7URr0g.BU50OL8kz4iKvb4L9P1VJ-76cirerXAgNNKGj_7xhYwg.JPEG%2FIMG_3688.jpg" alt="장군보쌈 이미지 1" loading="eager">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNDA5MTBfMTk0%2FMDAxNzI1OTM5ODM0ODM1.gDMf7oyYzCamSZAy2Kd-LLuaALz_ETOpuN7UCZWStY4g.t2dYZJ6h8JW2tXRfAj_IiTFSQgYBIaHRy8cP2aJdoXIg.JPEG%2FE07F3ED2-9F3A-40D9-8179-4D5EFB688DC3.jpeg%3Ftype%3Dw1500_60_sharpen" alt="장군보쌈 이미지 2" loading="lazy">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA0MThfMjMx%2FMDAxNzEzNDAzNDkzNDEw._CchvRgSvfRWG21MFCo7ZvGdeQNTDX-iQhNxlGkKVLog.pLQ0BP_-GKuKi-v3BlUdKusHyPpYb3oNcX_gKQmkVgYg.JPEG%2FIMG_4704.jpg" alt="장군보쌈 이미지 3" loading="lazy">
+        </div>
+        </div>
+        <button class="place-slider-nav prev" aria-label="이전 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        <button class="place-slider-nav next" aria-label="다음 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+        <div class="place-slider-counter">1 / 3</div>
       </section>
 
       <!-- Place Info -->

@@ -86,14 +86,32 @@
 
     <!-- Main Content -->
     <main>
-      <!-- Hero Image -->
-      <section class="place-hero">
-        <img
-          src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20200604_8%2F15912405422364IGU7_JPEG%2FyNl1tP7ql63NU4QaM5gu-P7e.jpg"
-          alt="마일스톤 커피 대표 이미지"
-          class="place-hero-image"
-          loading="eager"
-        >
+      <!-- Hero Image Slider -->
+
+      <section class="place-hero place-slider">
+        <div class="place-slider-track">
+
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20200604_8%2F15912405422364IGU7_JPEG%2FyNl1tP7ql63NU4QaM5gu-P7e.jpg" alt="마일스톤 커피 이미지 1" loading="eager">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20190220_228%2F1550635655819bgdf1_JPEG%2FnqiXYt3Dr4cyr-tE0CYOvCi0.JPG.jpg" alt="마일스톤 커피 이미지 2" loading="lazy">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDExMjRfMjM3%2FMDAxNzMyNDI4NzA4NTIy.8TnNPLXsgdVjLc0eP654EJAtMKwDd5WCRGmmNe-Z8r8g.ELzyYn5ALqJ5Qk7BXtXGrFP4Xcj8gT7VBcuMf0YUhAUg.JPEG%2F%25BC%25AD%25BF%25EF_%25BD%25C5%25BB%25E7_%25B0%25A1%25B7%25CE%25BC%25F6%25B1%25E6_%25C4%25AB%25C6%25E4_%25C3%25DF%25C3%25B5_%25B8%25B6%25C0%25CF%25BD%25BA%25C5%25E6%25C4%25BF%25C7%25C7_%25282%2529.jpg" alt="마일스톤 커피 이미지 3" loading="lazy">
+        </div>
+        </div>
+        <button class="place-slider-nav prev" aria-label="이전 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        <button class="place-slider-nav next" aria-label="다음 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+        <div class="place-slider-counter">1 / 3</div>
       </section>
 
       <!-- Place Info -->

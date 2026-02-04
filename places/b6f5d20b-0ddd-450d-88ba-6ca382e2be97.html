@@ -86,14 +86,32 @@
 
     <!-- Main Content -->
     <main>
-      <!-- Hero Image -->
-      <section class="place-hero">
-        <img
-          src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220425_2%2F1650862069185jY0hl_JPEG%2F1794343431_fBzLOVmo_65a018401a994be1ac2064d92e2f56a548a27087.jpg"
-          alt="삼해집 종로점 대표 이미지"
-          class="place-hero-image"
-          loading="eager"
-        >
+      <!-- Hero Image Slider -->
+
+      <section class="place-hero place-slider">
+        <div class="place-slider-track">
+
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220425_2%2F1650862069185jY0hl_JPEG%2F1794343431_fBzLOVmo_65a018401a994be1ac2064d92e2f56a548a27087.jpg" alt="삼해집 종로점 이미지 1" loading="eager">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNDExMjNfOTUg%2FMDAxNzMyMzY2MzA1OTI1.LkJ0UoBYbzRdbX2WWORpGKkbFMYrqvfQ_E3_JFDHBQIg.iZX-2BkPV34Y5l7wnn9j7Gns7AtFWG4ycYzxyPtgNdQg.JPEG%2F1000025820.jpg.jpg%3Ftype%3Dw1500_60_sharpen" alt="삼해집 종로점 이미지 2" loading="lazy">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDEwMjFfMjM5%2FMDAxNzI5NTE4ODk3NzIy.WRNyBuIGVANUufb-qn3492jDPmDgiMT1FfI0Vla-WXog.bOoOKRy13lXqhZZwQJM_8665MjitvGh5pgVPJBU0Pz4g.JPEG%2FDSC06423.JPG" alt="삼해집 종로점 이미지 3" loading="lazy">
+        </div>
+        </div>
+        <button class="place-slider-nav prev" aria-label="이전 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        <button class="place-slider-nav next" aria-label="다음 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+        <div class="place-slider-counter">1 / 3</div>
       </section>
 
       <!-- Place Info -->

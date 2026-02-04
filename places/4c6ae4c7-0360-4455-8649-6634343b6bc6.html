@@ -86,14 +86,32 @@
 
     <!-- Main Content -->
     <main>
-      <!-- Hero Image -->
-      <section class="place-hero">
-        <img
-          src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20150831_210%2F1441017594240i62ms_JPEG%2F11678686_0.jpg"
-          alt="백년옥 대표 이미지"
-          class="place-hero-image"
-          loading="eager"
-        >
+      <!-- Hero Image Slider -->
+
+      <section class="place-hero place-slider">
+        <div class="place-slider-track">
+
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20150831_210%2F1441017594240i62ms_JPEG%2F11678686_0.jpg" alt="백년옥 이미지 1" loading="eager">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA3MjBfNjEg%2FMDAxNzIxNDgzMjIyNjIz.QObb8KCBGIfhN1TpF5784DEhJcuN_2B7rbwZs32plzkg.ZIm59s8oNn21uTQdTGc4z8SlCNOY0dhTcY1f4IbOT6kg.JPEG%2FKakaoTalk_Photo_2024-07-20-22-21-00_008.jpeg" alt="백년옥 이미지 2" loading="lazy">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNDA5MTZfNzkg%2FMDAxNzI2NDMzODA0NTQz.4Qj39jHAdj8cIb01uWiQLMReRaEZF7dZWYSMaIexiWkg.zvj5u9wuJwWsM5Ju6v56KDiD7NeBENEOMX0gLJEnhucg.JPEG%2F933D3567-BAB5-490E-9E2D-78CF5262A75C.jpeg%3Ftype%3Dw1500_60_sharpen" alt="백년옥 이미지 3" loading="lazy">
+        </div>
+        </div>
+        <button class="place-slider-nav prev" aria-label="이전 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        <button class="place-slider-nav next" aria-label="다음 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+        <div class="place-slider-counter">1 / 3</div>
       </section>
 
       <!-- Place Info -->

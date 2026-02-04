@@ -86,14 +86,32 @@
 
     <!-- Main Content -->
     <main>
-      <!-- Hero Image -->
-      <section class="place-hero">
-        <img
-          src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230607_262%2F1686105062217ucxhL_JPEG%2FB45EE7EE-CA63-4128-A851-8C41D9CC57BA.jpeg"
-          alt="AVEK CHERI 아벡쉐리 대표 이미지"
-          class="place-hero-image"
-          loading="eager"
-        >
+      <!-- Hero Image Slider -->
+
+      <section class="place-hero place-slider">
+        <div class="place-slider-track">
+
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230607_262%2F1686105062217ucxhL_JPEG%2FB45EE7EE-CA63-4128-A851-8C41D9CC57BA.jpeg" alt="AVEK CHERI 아벡쉐리 이미지 1" loading="eager">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNTAxMzBfMTkz%2FMDAxNzM4MjEzNjk0NTUy.lcNKNk3aeR1UUTX1bYzHDPohC7ZqDrSzfrJOvhBlAo0g.EItHtm8jxnHM7kibXmt4_azWpt0nSBhE_5dCjl0PUCEg.JPEG%2F984003DE-ED36-4B77-9DDE-8E9E4EB4F9C5.jpeg%3Ftype%3Dw1500_60_sharpen" alt="AVEK CHERI 아벡쉐리 이미지 2" loading="lazy">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNTAxMjJfMTQ2%2FMDAxNzM3NTEzMTQyODcx.NjsB9RsHmCai03nT0C3JTELVlyWUFQgiUSiTloSeYFYg.ruZUAf9QECzfGsmvHJmWvYQPewAamiok8x3ChCUu63Mg.JPEG%2FAE3C7C93-F1A3-4CE7-9D1B-C9575ABCBDD7.jpeg%3Ftype%3Dw1500_60_sharpen" alt="AVEK CHERI 아벡쉐리 이미지 3" loading="lazy">
+        </div>
+        </div>
+        <button class="place-slider-nav prev" aria-label="이전 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        <button class="place-slider-nav next" aria-label="다음 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+        <div class="place-slider-counter">1 / 3</div>
       </section>
 
       <!-- Place Info -->

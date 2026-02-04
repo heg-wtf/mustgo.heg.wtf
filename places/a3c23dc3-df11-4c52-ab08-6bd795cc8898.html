@@ -86,14 +86,35 @@
 
     <!-- Main Content -->
     <main>
-      <!-- Hero Image -->
-      <section class="place-hero">
-        <img
-          src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20241105_50%2F1730788131970jS07a_JPEG%2FKakaoTalk_Photo_2024-11-05-15-28-36.jpeg"
-          alt="서울집시 퍼멘테리아 서촌 대표 이미지"
-          class="place-hero-image"
-          loading="eager"
-        >
+      <!-- Hero Image Slider -->
+
+      <section class="place-hero place-slider">
+        <div class="place-slider-track">
+
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20241105_50%2F1730788131970jS07a_JPEG%2FKakaoTalk_Photo_2024-11-05-15-28-36.jpeg" alt="서울집시 퍼멘테리아 서촌 이미지 1" loading="eager">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20241105_131%2F1730788250663pLQL4_JPEG%2FA9D5F13D-C077-472B-9DCC-3A427D0A60D0.JPG" alt="서울집시 퍼멘테리아 서촌 이미지 2" loading="lazy">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNTAxMjVfMTA0%2FMDAxNzM3ODAwMjg3NDQ5.O1Bqg0C2hlXF-dsp_5ZK_X4WXpMv5f36brJbYV4u06Qg.r5v0f44XmtI0tpAAYDjD3eTnF5XdLGAPGMYKM2GQ9qog.JPEG%2F1000045884.jpg.jpg%3Ftype%3Dw1500_60_sharpen" alt="서울집시 퍼멘테리아 서촌 이미지 3" loading="lazy">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20241105_115%2F1730788300077PGkKP_JPEG%2FE9DEA51E-F3A1-47DE-97DE-84BC542C6801.JPG" alt="서울집시 퍼멘테리아 서촌 이미지 4" loading="lazy">
+        </div>
+        </div>
+        <button class="place-slider-nav prev" aria-label="이전 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        <button class="place-slider-nav next" aria-label="다음 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+        <div class="place-slider-counter">1 / 4</div>
       </section>
 
       <!-- Place Info -->

@@ -86,14 +86,35 @@
 
     <!-- Main Content -->
     <main>
-      <!-- Hero Image -->
-      <section class="place-hero">
-        <img
-          src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230816_34%2F1692187535180qBpSq_JPEG%2FKakaoTalk_Photo_2023-08-16-21-03-22_001.jpeg"
-          alt="오쁘띠베르 대표 이미지"
-          class="place-hero-image"
-          loading="eager"
-        >
+      <!-- Hero Image Slider -->
+
+      <section class="place-hero place-slider">
+        <div class="place-slider-track">
+
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230816_34%2F1692187535180qBpSq_JPEG%2FKakaoTalk_Photo_2023-08-16-21-03-22_001.jpeg" alt="오쁘띠베르 이미지 1" loading="eager">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20231124_263%2F1700797456738bFqzi_JPEG%2FKakaoTalk_Photo_2023-10-19-18-24-56_004.jpeg" alt="오쁘띠베르 이미지 2" loading="lazy">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDEwMDNfOTUg%2FMDAxNzI3OTU5NTMwMzkx.Er2Dw1TP0ATjJb-VNXL8q-k57WItweI6SwnGds6eZYgg.RLVddejye1j4hulvrXEdUdGoGqlkLzZDZgkk_D_XPaAg.JPEG%2FIMG_5809.JPG" alt="오쁘띠베르 이미지 3" loading="lazy">
+        </div>
+        <div class="place-slider-slide">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230816_39%2F1692187073481flUDI_JPEG%2FKakaoTalk_Photo_2023-08-16-20-46-27_014.jpeg" alt="오쁘띠베르 이미지 4" loading="lazy">
+        </div>
+        </div>
+        <button class="place-slider-nav prev" aria-label="이전 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        <button class="place-slider-nav next" aria-label="다음 이미지">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+        <div class="place-slider-counter">1 / 4</div>
       </section>
 
       <!-- Place Info -->
