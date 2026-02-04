@@ -32,6 +32,9 @@
   <!-- Styles -->
   <link rel="stylesheet" href="/assets/css/style.css">
 
+  <!-- Naver Maps SDK -->
+  <script src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=5sgg4izutv"></script>
+
   <!-- Canonical -->
   <link rel="canonical" href="https://mustgo.heg.wtf/places/49439837-f240-413c-a0f2-66b41c39161d">
 
@@ -146,16 +149,10 @@
 
       <!-- Map -->
       <section class="place-map">
-        <div class="place-map-container" id="map">
-          <a
-            href="https://map.naver.com/v5/search/%ED%84%B0%EC%B9%98"
-            target="_blank"
-            rel="noopener noreferrer"
-            style="display: flex; align-items: center; justify-content: center; height: 100%; background: var(--bg-tertiary); color: var(--text-secondary); text-decoration: none;"
-          >
-            <span>네이버 지도에서 보기</span>
-          </a>
-        </div>
+        <div class="place-map-container" id="map" data-lat="37.535093" data-lng="127.0009403" data-name="터치"></div>
+        <a href="https://map.naver.com/v5/search/%ED%84%B0%EC%B9%98" target="_blank" rel="noopener noreferrer" class="place-map-link">
+          네이버 지도에서 크게 보기
+        </a>
       </section>
 
       <!-- Details -->

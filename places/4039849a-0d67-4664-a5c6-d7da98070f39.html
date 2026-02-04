@@ -32,6 +32,9 @@
   <!-- Styles -->
   <link rel="stylesheet" href="/assets/css/style.css">
 
+  <!-- Naver Maps SDK -->
+  <script src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=5sgg4izutv"></script>
+
   <!-- Canonical -->
   <link rel="canonical" href="https://mustgo.heg.wtf/places/4039849a-0d67-4664-a5c6-d7da98070f39">
 
@@ -145,16 +148,10 @@
 
       <!-- Map -->
       <section class="place-map">
-        <div class="place-map-container" id="map">
-          <a
-            href="https://map.naver.com/v5/search/%EB%88%84%EC%98%A4%EB%B0%94%EC%9D%B4%ED%83%88%EB%A6%AC%EC%95%84"
-            target="_blank"
-            rel="noopener noreferrer"
-            style="display: flex; align-items: center; justify-content: center; height: 100%; background: var(--bg-tertiary); color: var(--text-secondary); text-decoration: none;"
-          >
-            <span>네이버 지도에서 보기</span>
-          </a>
-        </div>
+        <div class="place-map-container" id="map" data-lat="37.51738375" data-lng="126.98517572" data-name="누오바이탈리아"></div>
+        <a href="https://map.naver.com/v5/search/%EB%88%84%EC%98%A4%EB%B0%94%EC%9D%B4%ED%83%88%EB%A6%AC%EC%95%84" target="_blank" rel="noopener noreferrer" class="place-map-link">
+          네이버 지도에서 크게 보기
+        </a>
       </section>
 
       <!-- Details -->

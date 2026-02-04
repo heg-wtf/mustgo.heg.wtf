@@ -32,6 +32,9 @@
   <!-- Styles -->
   <link rel="stylesheet" href="/assets/css/style.css">
 
+  <!-- Naver Maps SDK -->
+  <script src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=5sgg4izutv"></script>
+
   <!-- Canonical -->
   <link rel="canonical" href="https://mustgo.heg.wtf/places/7c4bcc83-dc1f-43f6-b67a-66905781c560">
 
@@ -145,16 +148,10 @@
 
       <!-- Map -->
       <section class="place-map">
-        <div class="place-map-container" id="map">
-          <a
-            href="https://map.naver.com/v5/search/%EA%B9%80%EC%A7%84%EB%AA%A9%EC%82%BC"
-            target="_blank"
-            rel="noopener noreferrer"
-            style="display: flex; align-items: center; justify-content: center; height: 100%; background: var(--bg-tertiary); color: var(--text-secondary); text-decoration: none;"
-          >
-            <span>네이버 지도에서 보기</span>
-          </a>
-        </div>
+        <div class="place-map-container" id="map" data-lat="37.57715283" data-lng="126.96953123" data-name="김진목삼"></div>
+        <a href="https://map.naver.com/v5/search/%EA%B9%80%EC%A7%84%EB%AA%A9%EC%82%BC" target="_blank" rel="noopener noreferrer" class="place-map-link">
+          네이버 지도에서 크게 보기
+        </a>
       </section>
 
       <!-- Details -->

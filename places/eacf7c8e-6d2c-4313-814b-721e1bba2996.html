@@ -32,6 +32,9 @@
   <!-- Styles -->
   <link rel="stylesheet" href="/assets/css/style.css">
 
+  <!-- Naver Maps SDK -->
+  <script src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=5sgg4izutv"></script>
+
   <!-- Canonical -->
   <link rel="canonical" href="https://mustgo.heg.wtf/places/eacf7c8e-6d2c-4313-814b-721e1bba2996">
 
@@ -147,16 +150,10 @@
 
       <!-- Map -->
       <section class="place-map">
-        <div class="place-map-container" id="map">
-          <a
-            href="https://map.naver.com/v5/search/%ED%95%B4%EC%99%95%EC%A1%B0%EA%B0%9C%EC%A0%84%EB%AC%B8%20%EB%91%94%EC%B4%8C%EC%A0%90"
-            target="_blank"
-            rel="noopener noreferrer"
-            style="display: flex; align-items: center; justify-content: center; height: 100%; background: var(--bg-tertiary); color: var(--text-secondary); text-decoration: none;"
-          >
-            <span>네이버 지도에서 보기</span>
-          </a>
-        </div>
+        <div class="place-map-container" id="map" data-lat="37.5271958" data-lng="127.1350612" data-name="해왕조개전문 둔촌점"></div>
+        <a href="https://map.naver.com/v5/search/%ED%95%B4%EC%99%95%EC%A1%B0%EA%B0%9C%EC%A0%84%EB%AC%B8%20%EB%91%94%EC%B4%8C%EC%A0%90" target="_blank" rel="noopener noreferrer" class="place-map-link">
+          네이버 지도에서 크게 보기
+        </a>
       </section>
 
       <!-- Details -->

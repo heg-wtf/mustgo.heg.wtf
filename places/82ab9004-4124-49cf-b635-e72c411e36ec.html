@@ -32,6 +32,9 @@
   <!-- Styles -->
   <link rel="stylesheet" href="/assets/css/style.css">
 
+  <!-- Naver Maps SDK -->
+  <script src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=5sgg4izutv"></script>
+
   <!-- Canonical -->
   <link rel="canonical" href="https://mustgo.heg.wtf/places/82ab9004-4124-49cf-b635-e72c411e36ec">
 
@@ -146,16 +149,10 @@
 
       <!-- Map -->
       <section class="place-map">
-        <div class="place-map-container" id="map">
-          <a
-            href="https://map.naver.com/v5/search/%EC%9A%A9%EB%AC%B8%EA%B0%88%EB%B9%84"
-            target="_blank"
-            rel="noopener noreferrer"
-            style="display: flex; align-items: center; justify-content: center; height: 100%; background: var(--bg-tertiary); color: var(--text-secondary); text-decoration: none;"
-          >
-            <span>네이버 지도에서 보기</span>
-          </a>
-        </div>
+        <div class="place-map-container" id="map" data-lat="37.53626134" data-lng="126.96124161" data-name="용문갈비"></div>
+        <a href="https://map.naver.com/v5/search/%EC%9A%A9%EB%AC%B8%EA%B0%88%EB%B9%84" target="_blank" rel="noopener noreferrer" class="place-map-link">
+          네이버 지도에서 크게 보기
+        </a>
       </section>
 
       <!-- Details -->

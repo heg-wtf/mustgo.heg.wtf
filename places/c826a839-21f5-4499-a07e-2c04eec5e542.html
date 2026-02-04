@@ -32,6 +32,9 @@
   <!-- Styles -->
   <link rel="stylesheet" href="/assets/css/style.css">
 
+  <!-- Naver Maps SDK -->
+  <script src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=5sgg4izutv"></script>
+
   <!-- Canonical -->
   <link rel="canonical" href="https://mustgo.heg.wtf/places/c826a839-21f5-4499-a07e-2c04eec5e542">
 
@@ -145,16 +148,10 @@
 
       <!-- Map -->
       <section class="place-map">
-        <div class="place-map-container" id="map">
-          <a
-            href="https://map.naver.com/v5/search/%EC%BB%A4%ED%94%BC%ED%95%9C%EC%95%BD%EB%B0%A9%EC%B9%B4%ED%8E%98"
-            target="_blank"
-            rel="noopener noreferrer"
-            style="display: flex; align-items: center; justify-content: center; height: 100%; background: var(--bg-tertiary); color: var(--text-secondary); text-decoration: none;"
-          >
-            <span>네이버 지도에서 보기</span>
-          </a>
-        </div>
+        <div class="place-map-container" id="map" data-lat="37.5665774" data-lng="126.9886173" data-name="커피한약방카페"></div>
+        <a href="https://map.naver.com/v5/search/%EC%BB%A4%ED%94%BC%ED%95%9C%EC%95%BD%EB%B0%A9%EC%B9%B4%ED%8E%98" target="_blank" rel="noopener noreferrer" class="place-map-link">
+          네이버 지도에서 크게 보기
+        </a>
       </section>
 
       <!-- Details -->

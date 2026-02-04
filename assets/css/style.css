@@ -576,6 +576,14 @@ p {
   background-color: var(--bg-tertiary);
 }
 
+.place-map-link {
+  display: block;
+  text-align: center;
+  margin-top: var(--spacing-sm);
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+}
+
 /* Details */
 .place-details {
   padding: 0 var(--spacing-lg);

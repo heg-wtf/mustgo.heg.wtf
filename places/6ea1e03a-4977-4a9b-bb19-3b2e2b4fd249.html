@@ -32,6 +32,9 @@
   <!-- Styles -->
   <link rel="stylesheet" href="/assets/css/style.css">
 
+  <!-- Naver Maps SDK -->
+  <script src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=5sgg4izutv"></script>
+
   <!-- Canonical -->
   <link rel="canonical" href="https://mustgo.heg.wtf/places/6ea1e03a-4977-4a9b-bb19-3b2e2b4fd249">
 
@@ -146,16 +149,10 @@
 
       <!-- Map -->
       <section class="place-map">
-        <div class="place-map-container" id="map">
-          <a
-            href="https://map.naver.com/v5/search/%EC%9D%B5%EC%8A%A4%EC%B2%BC%20%ED%95%A9%EC%A0%95%EB%B3%B8%EC%A0%90"
-            target="_blank"
-            rel="noopener noreferrer"
-            style="display: flex; align-items: center; justify-content: center; height: 100%; background: var(--bg-tertiary); color: var(--text-secondary); text-decoration: none;"
-          >
-            <span>네이버 지도에서 보기</span>
-          </a>
-        </div>
+        <div class="place-map-container" id="map" data-lat="37.54573189" data-lng="126.91456385" data-name="익스첼 합정본점"></div>
+        <a href="https://map.naver.com/v5/search/%EC%9D%B5%EC%8A%A4%EC%B2%BC%20%ED%95%A9%EC%A0%95%EB%B3%B8%EC%A0%90" target="_blank" rel="noopener noreferrer" class="place-map-link">
+          네이버 지도에서 크게 보기
+        </a>
       </section>
 
       <!-- Details -->

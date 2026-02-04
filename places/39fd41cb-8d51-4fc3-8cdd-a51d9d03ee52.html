@@ -32,6 +32,9 @@
   <!-- Styles -->
   <link rel="stylesheet" href="/assets/css/style.css">
 
+  <!-- Naver Maps SDK -->
+  <script src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=5sgg4izutv"></script>
+
   <!-- Canonical -->
   <link rel="canonical" href="https://mustgo.heg.wtf/places/39fd41cb-8d51-4fc3-8cdd-a51d9d03ee52">
 
@@ -147,16 +150,10 @@
 
       <!-- Map -->
       <section class="place-map">
-        <div class="place-map-container" id="map">
-          <a
-            href="https://map.naver.com/v5/search/%ED%81%B4%EB%9E%A9%ED%94%BC%EC%9E%90%20%EC%B2%AD%EB%8B%B4"
-            target="_blank"
-            rel="noopener noreferrer"
-            style="display: flex; align-items: center; justify-content: center; height: 100%; background: var(--bg-tertiary); color: var(--text-secondary); text-decoration: none;"
-          >
-            <span>네이버 지도에서 보기</span>
-          </a>
-        </div>
+        <div class="place-map-container" id="map" data-lat="37.5241064" data-lng="127.036605" data-name="클랩피자 청담"></div>
+        <a href="https://map.naver.com/v5/search/%ED%81%B4%EB%9E%A9%ED%94%BC%EC%9E%90%20%EC%B2%AD%EB%8B%B4" target="_blank" rel="noopener noreferrer" class="place-map-link">
+          네이버 지도에서 크게 보기
+        </a>
       </section>
 
       <!-- Details -->

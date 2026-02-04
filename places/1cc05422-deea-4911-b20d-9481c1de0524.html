@@ -32,6 +32,9 @@
   <!-- Styles -->
   <link rel="stylesheet" href="/assets/css/style.css">
 
+  <!-- Naver Maps SDK -->
+  <script src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=5sgg4izutv"></script>
+
   <!-- Canonical -->
   <link rel="canonical" href="https://mustgo.heg.wtf/places/1cc05422-deea-4911-b20d-9481c1de0524">
 
@@ -148,16 +151,10 @@
 
       <!-- Map -->
       <section class="place-map">
-        <div class="place-map-container" id="map">
-          <a
-            href="https://map.naver.com/v5/search/%EC%9D%B4%EB%8F%84%EA%B3%B0%ED%83%95%20%EC%84%9C%EC%9A%B8%EC%97%AD%20%EC%A7%81%EC%98%81%EC%A0%90"
-            target="_blank"
-            rel="noopener noreferrer"
-            style="display: flex; align-items: center; justify-content: center; height: 100%; background: var(--bg-tertiary); color: var(--text-secondary); text-decoration: none;"
-          >
-            <span>네이버 지도에서 보기</span>
-          </a>
-        </div>
+        <div class="place-map-container" id="map" data-lat="37.554989" data-lng="126.9695548" data-name="이도곰탕 서울역 직영점"></div>
+        <a href="https://map.naver.com/v5/search/%EC%9D%B4%EB%8F%84%EA%B3%B0%ED%83%95%20%EC%84%9C%EC%9A%B8%EC%97%AD%20%EC%A7%81%EC%98%81%EC%A0%90" target="_blank" rel="noopener noreferrer" class="place-map-link">
+          네이버 지도에서 크게 보기
+        </a>
       </section>
 
       <!-- Details -->

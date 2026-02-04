@@ -32,6 +32,9 @@
   <!-- Styles -->
   <link rel="stylesheet" href="/assets/css/style.css">
 
+  <!-- Naver Maps SDK -->
+  <script src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=5sgg4izutv"></script>
+
   <!-- Canonical -->
   <link rel="canonical" href="https://mustgo.heg.wtf/places/dfeb3a5e-a58c-49b3-aa34-1f653d110576">
 
@@ -142,16 +145,10 @@
 
       <!-- Map -->
       <section class="place-map">
-        <div class="place-map-container" id="map">
-          <a
-            href="https://map.naver.com/v5/search/%EC%98%A8%EB%8F%88%EB%B6%80%EB%A6%AC%20%EC%83%81%EC%95%94%EC%A0%90"
-            target="_blank"
-            rel="noopener noreferrer"
-            style="display: flex; align-items: center; justify-content: center; height: 100%; background: var(--bg-tertiary); color: var(--text-secondary); text-decoration: none;"
-          >
-            <span>네이버 지도에서 보기</span>
-          </a>
-        </div>
+        <div class="place-map-container" id="map" data-lat="37.58209264" data-lng="126.88898472" data-name="온돈부리 상암점"></div>
+        <a href="https://map.naver.com/v5/search/%EC%98%A8%EB%8F%88%EB%B6%80%EB%A6%AC%20%EC%83%81%EC%95%94%EC%A0%90" target="_blank" rel="noopener noreferrer" class="place-map-link">
+          네이버 지도에서 크게 보기
+        </a>
       </section>
 
       <!-- Details -->

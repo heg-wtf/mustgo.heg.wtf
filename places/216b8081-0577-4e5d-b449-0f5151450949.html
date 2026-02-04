@@ -32,6 +32,9 @@
   <!-- Styles -->
   <link rel="stylesheet" href="/assets/css/style.css">
 
+  <!-- Naver Maps SDK -->
+  <script src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=5sgg4izutv"></script>
+
   <!-- Canonical -->
   <link rel="canonical" href="https://mustgo.heg.wtf/places/216b8081-0577-4e5d-b449-0f5151450949">
 
@@ -153,16 +156,10 @@
 
       <!-- Map -->
       <section class="place-map">
-        <div class="place-map-container" id="map">
-          <a
-            href="https://map.naver.com/v5/search/%ED%95%8F%EC%A0%9C%EB%A6%AC%EC%95%84%EC%98%A4%20%EB%8C%80%ED%95%99%EB%A1%9C%20%EB%B3%B8%EC%A0%90"
-            target="_blank"
-            rel="noopener noreferrer"
-            style="display: flex; align-items: center; justify-content: center; height: 100%; background: var(--bg-tertiary); color: var(--text-secondary); text-decoration: none;"
-          >
-            <span>네이버 지도에서 보기</span>
-          </a>
-        </div>
+        <div class="place-map-container" id="map" data-lat="37.5820958" data-lng="127.0043262" data-name="핏제리아오 대학로 본점"></div>
+        <a href="https://map.naver.com/v5/search/%ED%95%8F%EC%A0%9C%EB%A6%AC%EC%95%84%EC%98%A4%20%EB%8C%80%ED%95%99%EB%A1%9C%20%EB%B3%B8%EC%A0%90" target="_blank" rel="noopener noreferrer" class="place-map-link">
+          네이버 지도에서 크게 보기
+        </a>
       </section>
 
       <!-- Details -->

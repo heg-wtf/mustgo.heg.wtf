@@ -273,6 +273,45 @@
   }
 
   /**
+   * 네이버 지도 초기화
+   */
+  function initNaverMap() {
+    var mapContainer = document.getElementById('map');
+    if (!mapContainer) return;
+
+    var lat = parseFloat(mapContainer.dataset.lat);
+    var lng = parseFloat(mapContainer.dataset.lng);
+    var name = mapContainer.dataset.name;
+
+    if (isNaN(lat) || isNaN(lng)) return;
+
+    // 네이버 지도 API 로드 확인
+    if (typeof naver === 'undefined' || typeof naver.maps === 'undefined') {
+      console.warn('Naver Maps SDK not loaded');
+      return;
+    }
+
+    var position = new naver.maps.LatLng(lat, lng);
+
+    var map = new naver.maps.Map(mapContainer, {
+      center: position,
+      zoom: 16,
+      zoomControl: false,
+      mapTypeControl: false,
+      scaleControl: false,
+      logoControl: false,
+      mapDataControl: false
+    });
+
+    // 마커 추가
+    new naver.maps.Marker({
+      position: position,
+      map: map,
+      title: name
+    });
+  }
+
+  /**
    * 이미지 지연 로딩
    */
   function lazyLoadImages() {
@@ -327,6 +366,7 @@
     handleBookmarkButton();
     lazyLoadImages();
     initImageSlider();
+    initNaverMap();
   }
 
   // 전역 함수로 노출 (앱에서 호출 가능)

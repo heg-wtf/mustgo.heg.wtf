@@ -32,6 +32,9 @@
   <!-- Styles -->
   <link rel="stylesheet" href="/assets/css/style.css">
 
+  <!-- Naver Maps SDK -->
+  <script src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=5sgg4izutv"></script>
+
   <!-- Canonical -->
   <link rel="canonical" href="https://mustgo.heg.wtf/places/81b7a337-52aa-461a-8a28-fc7947174027">
 
@@ -145,16 +148,10 @@
 
       <!-- Map -->
       <section class="place-map">
-        <div class="place-map-container" id="map">
-          <a
-            href="https://map.naver.com/v5/search/%EB%B9%84%ED%8B%80%EC%8A%A4%ED%83%80%EC%BD%94%20%EC%84%9C%EC%88%9C%EB%9D%BC%EC%A0%90"
-            target="_blank"
-            rel="noopener noreferrer"
-            style="display: flex; align-items: center; justify-content: center; height: 100%; background: var(--bg-tertiary); color: var(--text-secondary); text-decoration: none;"
-          >
-            <span>네이버 지도에서 보기</span>
-          </a>
-        </div>
+        <div class="place-map-container" id="map" data-lat="37.57420358" data-lng="126.99204645" data-name="비틀스타코 서순라점"></div>
+        <a href="https://map.naver.com/v5/search/%EB%B9%84%ED%8B%80%EC%8A%A4%ED%83%80%EC%BD%94%20%EC%84%9C%EC%88%9C%EB%9D%BC%EC%A0%90" target="_blank" rel="noopener noreferrer" class="place-map-link">
+          네이버 지도에서 크게 보기
+        </a>
       </section>
 
       <!-- Details -->

@@ -32,6 +32,9 @@
   <!-- Styles -->
   <link rel="stylesheet" href="/assets/css/style.css">
 
+  <!-- Naver Maps SDK -->
+  <script src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=5sgg4izutv"></script>
+
   <!-- Canonical -->
   <link rel="canonical" href="https://mustgo.heg.wtf/places/3fed58e6-71a1-4c8c-bee8-5b52c1a44e93">
 
@@ -145,16 +148,10 @@
 
       <!-- Map -->
       <section class="place-map">
-        <div class="place-map-container" id="map">
-          <a
-            href="https://map.naver.com/v5/search/%EC%8A%A4%ED%8B%B0%EB%A8%B8%EC%8A%A4%20%EC%BB%A4%ED%94%BC%ED%8C%A9%ED%86%A0%EB%A6%AC"
-            target="_blank"
-            rel="noopener noreferrer"
-            style="display: flex; align-items: center; justify-content: center; height: 100%; background: var(--bg-tertiary); color: var(--text-secondary); text-decoration: none;"
-          >
-            <span>네이버 지도에서 보기</span>
-          </a>
-        </div>
+        <div class="place-map-container" id="map" data-lat="37.52199802" data-lng="127.01994491" data-name="스티머스 커피팩토리"></div>
+        <a href="https://map.naver.com/v5/search/%EC%8A%A4%ED%8B%B0%EB%A8%B8%EC%8A%A4%20%EC%BB%A4%ED%94%BC%ED%8C%A9%ED%86%A0%EB%A6%AC" target="_blank" rel="noopener noreferrer" class="place-map-link">
+          네이버 지도에서 크게 보기
+        </a>
       </section>
 
       <!-- Details -->

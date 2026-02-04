@@ -32,6 +32,9 @@
   <!-- Styles -->
   <link rel="stylesheet" href="/assets/css/style.css">
 
+  <!-- Naver Maps SDK -->
+  <script src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=5sgg4izutv"></script>
+
   <!-- Canonical -->
   <link rel="canonical" href="https://mustgo.heg.wtf/places/63ac0f0d-928f-49c6-b8c3-dec7fe524276">
 
@@ -146,16 +149,10 @@
 
       <!-- Map -->
       <section class="place-map">
-        <div class="place-map-container" id="map">
-          <a
-            href="https://map.naver.com/v5/search/%ED%95%9C%EC%98%A5%EB%8B%AC%20%EB%A0%88%EC%8A%A4%ED%86%A0%EB%9E%91"
-            target="_blank"
-            rel="noopener noreferrer"
-            style="display: flex; align-items: center; justify-content: center; height: 100%; background: var(--bg-tertiary); color: var(--text-secondary); text-decoration: none;"
-          >
-            <span>네이버 지도에서 보기</span>
-          </a>
-        </div>
+        <div class="place-map-container" id="map" data-lat="37.57692621" data-lng="126.97198053" data-name="한옥달 레스토랑"></div>
+        <a href="https://map.naver.com/v5/search/%ED%95%9C%EC%98%A5%EB%8B%AC%20%EB%A0%88%EC%8A%A4%ED%86%A0%EB%9E%91" target="_blank" rel="noopener noreferrer" class="place-map-link">
+          네이버 지도에서 크게 보기
+        </a>
       </section>
 
       <!-- Details -->
