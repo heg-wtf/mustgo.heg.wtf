@@ -71,4 +71,4 @@ TTL: 300
 
 ## 라이선스
 
-Copyright © 2026 HEG (Hyper Engineering Group). All rights reserved.
+Copyright © 2026 HEG. All rights reserved.

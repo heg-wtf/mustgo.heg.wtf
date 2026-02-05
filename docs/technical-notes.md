@@ -114,6 +114,18 @@ Bridge 채널이 없으면 `console.log`로 출력되어 브라우저에서 디�
 - 네이버 지도 링크는 외부링크에서 제외
 - 데이터 없는 항목은 자동 숨김
 
+## 길찾기 (네이버 지도 앱 URL Scheme)
+
+길찾기 버튼은 `nmap://` URL Scheme을 사용하여 네이버 지도 앱으로 연동:
+
+```
+nmap://route/car?dlat={위도}&dlng={경도}&dname={장소명}&appname=mustgo.heg.wtf
+```
+
+- 출발지(`slat`, `slng`) 미지정 시 현재 위치 자동 사용
+- 앱 미설치 시 앱스토어/플레이스토어로 이동
+- 참고: [네이버 클라우드 URL Scheme 가이드](https://guide.ncloud-docs.com/docs/maps-url-scheme)
+
 ## 앱 모드 (type=MUSTGO-APP)
 
 `main.js`의 `handleAppMode()`:

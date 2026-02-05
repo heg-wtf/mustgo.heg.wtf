@@ -40,7 +40,7 @@ MustGo 웹은 Flutter 앱의 WebView에서 장소 상세 정보를 표시하기 
 
 앱에서 WebView로 접근 시 다음 요소가 숨겨집니다:
 - 헤더 (뒤로, 공유 버튼)
-- 푸터 (홈, 이용약관, 개인정보처리방침)
+- 푸터 (© 2026 HEG)
 - 길찾기 버튼 (.place-actions)
 
 ### WebView → 앱
@@ -164,3 +164,15 @@ UUID는 Supabase `mustgo_places` 테이블의 `id` 필드 값입니다.
 - 줌 레벨: 18
 - 컨트롤: 모두 숨김
 - 마커: 장소 위치에 자동 추가
+
+## 길찾기 (네이버 지도 앱 연동)
+
+길찾기 버튼 클릭 시 네이버 지도 앱 URL Scheme (`nmap://`)을 사용:
+
+```
+nmap://route/car?dlat={위도}&dlng={경도}&dname={장소명}&appname=mustgo.heg.wtf
+```
+
+- 출발지 미지정 시 현재 위치 사용
+- 앱 미설치 시 앱스토어/플레이스토어로 이동
+- 참고: [네이버 클라우드 URL Scheme 가이드](https://guide.ncloud-docs.com/docs/maps-url-scheme)
